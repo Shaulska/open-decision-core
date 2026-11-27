@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "evidence": [
+    {
+      "id": "load-v1",
+      "source": "mock-server",
+      "entity": "demo-service",
+      "feature": "load",
+      "version": "1",
+      "value": 42,
+      "event_time": "2026-01-01T10:00:00Z",
+      "published_at": "2026-01-01T10:01:00Z",
+      "received_at": "2026-01-01T10:02:00Z",
+      "available_at": "2026-01-01T10:03:00Z",
+      "precision": "SECOND",
+      "availability_kind": "OBSERVED",
+      "usage": "OBSERVATION",
+      "source_ref": "synthetic:server-telemetry",
+      "parents": []
+    },
+    {
+      "id": "load-v2",
+      "source": "mock-server",
+      "entity": "demo-service",
+      "feature": "load",
+      "version": "2",
+      "value": 78,
+      "event_time": "2026-01-01T10:00:00Z",
+      "published_at": "2026-01-01T10:01:00Z",
+      "received_at": "2026-01-01T12:15:00Z",
+      "available_at": "2026-01-01T12:16:00Z",
+      "precision": "SECOND",
+      "availability_kind": "OBSERVED",
+      "usage": "OBSERVATION",
+      "source_ref": "synthetic:server-telemetry",
+      "parents": []
+    },
+    {
+      "id": "load-unknown",
+      "source": "mock-server",
+      "entity": "demo-service",
+      "feature": "load",
+      "version": "3",
+      "value": 42,
+      "event_time": "2026-01-01T10:00:00Z",
+      "published_at": "2026-01-01T10:01:00Z",
+      "received_at": null,
+      "available_at": null,
+      "precision": "SECOND",
+      "availability_kind": "UNKNOWN",
+      "usage": "OBSERVATION",
+      "source_ref": "synthetic:server-telemetry",
+      "parents": []
+    }
+  ],
+  "decisions": [
+    {
+      "id": "timely",
+      "decision_at": "2026-01-01T12:00:00Z",
+      "evidence_ids": [
+        "load-v1"
+      ],
+      "mode": "OBSERVED_REPLAY"
+    },
+    {
+      "id": "future-revision",
+      "decision_at": "2026-01-01T12:00:00Z",
+      "evidence_ids": [
+        "load-v2"
+      ],
+      "mode": "OBSERVED_REPLAY"
+    },
+    {
+      "id": "unknown",
+      "decision_at": "2026-01-01T12:00:00Z",
+      "evidence_ids": [
+        "load-unknown"
+      ],
+      "mode": "OBSERVED_REPLAY"
+    }
+  ]
+}
