@@ -1,0 +1,3 @@
+# Security and limitations
+
+Private preview, local-only. Use trusted small JSON files. CLI limits inputs to 32 MiB and rejects duplicate JSON keys, nonfinite constants and malformed timestamps. No arbitrary code execution, remote requests or real actions. Deep or very large lineage can exceed recursion/resource limits; do not expose the preview as an unauthenticated upload endpoint. Source timestamps and identities are declared, not authenticated; hashes alone do not establish provenance or historical existence. Keep a trusted copy of original receipts. No credentials, private datasets or imported private code are required. Report vulnerabilities privately to the project owner until a public contact is set.

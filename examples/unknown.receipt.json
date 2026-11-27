@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "policy": "temporal-evidence-v0.1",
+  "input_sha256": "56089a72abf1d49cbc1faa48efe614782a7d831e0c55c7d0d79c4d77ef058cbf",
+  "status": "UNVERIFIED",
+  "counts": {
+    "BLOCK": 0,
+    "UNVERIFIED": 2
+  },
+  "decisions": 1,
+  "findings": [
+    {
+      "code": "AVAILABILITY_UNVERIFIED",
+      "status": "UNVERIFIED",
+      "record": "load-unknown",
+      "decision": "unknown"
+    },
+    {
+      "code": "UNKNOWN_AVAILABILITY",
+      "status": "UNVERIFIED",
+      "record": "load-unknown",
+      "decision": "unknown"
+    }
+  ],
+  "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
+  "receipt_sha256": "6e4676a888f2ef95e01337e6bf21a5e988190133079fdc68e4196c53a9df6c9f"
+}

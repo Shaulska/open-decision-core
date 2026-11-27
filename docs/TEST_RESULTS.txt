@@ -1,0 +1,36 @@
+test_bad_order (test_core.AuditTests.test_bad_order) ... ok
+test_clean (test_core.AuditTests.test_clean) ... ok
+test_cli_exit (test_core.AuditTests.test_cli_exit) ... ok
+test_cycle (test_core.AuditTests.test_cycle) ... ok
+test_day_precision (test_core.AuditTests.test_day_precision) ... ok
+test_derived_before_parent (test_core.AuditTests.test_derived_before_parent) ... ok
+test_duplicate_conflict (test_core.AuditTests.test_duplicate_conflict) ... ok
+test_duplicate_identical (test_core.AuditTests.test_duplicate_identical) ... ok
+test_duplicate_version (test_core.AuditTests.test_duplicate_version) ... ok
+test_equal (test_core.AuditTests.test_equal) ... ok
+test_exact_revision (test_core.AuditTests.test_exact_revision) ... ok
+test_future_observation (test_core.AuditTests.test_future_observation) ... ok
+test_html_escape (test_core.AuditTests.test_html_escape) ... ok
+test_json_duplicate_keys (test_core.AuditTests.test_json_duplicate_keys) ... ok
+test_late (test_core.AuditTests.test_late) ... ok
+test_late_parent (test_core.AuditTests.test_late_parent) ... ok
+test_missing_parent (test_core.AuditTests.test_missing_parent) ... ok
+test_naive (test_core.AuditTests.test_naive) ... ok
+test_no_decisions (test_core.AuditTests.test_no_decisions) ... ok
+test_offsets (test_core.AuditTests.test_offsets) ... ok
+test_provider (test_core.AuditTests.test_provider) ... ok
+test_random_100 (test_core.AuditTests.test_random_100) ... ok
+test_retro (test_core.AuditTests.test_retro) ... ok
+test_schedule (test_core.AuditTests.test_schedule) ... ok
+test_tamper (test_core.AuditTests.test_tamper) ... ok
+test_unknown (test_core.AuditTests.test_unknown) ... ok
+test_clean (test_core.SplitTests.test_clean) ... ok
+test_embargo (test_core.SplitTests.test_embargo) ... ok
+test_late_label (test_core.SplitTests.test_late_label) ... ok
+test_overlap (test_core.SplitTests.test_overlap) ... ok
+test_unknown (test_core.SplitTests.test_unknown) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 2.000s
+
+OK
