@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "policy": "temporal-evidence-v0.1",
+  "policy": "temporal-evidence-v0.3",
   "input_sha256": "84f6880ed2719820981c9c0b6fd81181e386716177de4be24416c450a26d53b5",
   "status": "PASS",
   "counts": {
@@ -10,5 +10,5 @@
   "decisions": 1,
   "findings": [],
   "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
-  "receipt_sha256": "3238d55b5b77c38be7791b26e44285b23a324061357fcc97b3cb3168c21f6398"
+  "receipt_sha256": "4492e4738288244774b53d512b131c2108bbb725934e4263a99dd20106f099ae"
 }

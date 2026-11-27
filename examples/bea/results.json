@@ -17,7 +17,7 @@
       "published_at": "2024-04-25T08:30:00-04:00",
       "available_at": "2024-04-25T08:30:00-04:00",
       "received_at": null,
-      "precision": "SECOND",
+      "precision": "MINUTE",
       "availability_kind": "PROVIDER_PUBLISHED",
       "usage": "OBSERVATION",
       "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-first-quarter-2024-advance-estimate",
@@ -34,7 +34,7 @@
       "published_at": "2024-05-30T08:30:00-04:00",
       "available_at": "2024-05-30T08:30:00-04:00",
       "received_at": null,
-      "precision": "SECOND",
+      "precision": "MINUTE",
       "availability_kind": "PROVIDER_PUBLISHED",
       "usage": "OBSERVATION",
       "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-first-quarter-2024-second-estimate-and-corporate-profits",
@@ -51,7 +51,7 @@
       "published_at": "2024-06-27T08:30:00-04:00",
       "available_at": "2024-06-27T08:30:00-04:00",
       "received_at": null,
-      "precision": "SECOND",
+      "precision": "MINUTE",
       "availability_kind": "PROVIDER_PUBLISHED",
       "usage": "OBSERVATION",
       "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-third-estimate-corporate-profits-revised-estimate-and-gdp-industry",
@@ -68,7 +68,7 @@
       "published_at": "2024-07-25T08:30:00-04:00",
       "available_at": "2024-07-25T08:30:00-04:00",
       "received_at": null,
-      "precision": "SECOND",
+      "precision": "MINUTE",
       "availability_kind": "PROVIDER_PUBLISHED",
       "usage": "OBSERVATION",
       "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-second-quarter-2024-advance-estimate",
@@ -85,7 +85,7 @@
       "published_at": "2024-08-29T08:30:00-04:00",
       "available_at": "2024-08-29T08:30:00-04:00",
       "received_at": null,
-      "precision": "SECOND",
+      "precision": "MINUTE",
       "availability_kind": "PROVIDER_PUBLISHED",
       "usage": "OBSERVATION",
       "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-second-estimate-corporate-profits-preliminary-estimate-second",
@@ -102,7 +102,7 @@
       "published_at": "2024-09-26T08:30:00-04:00",
       "available_at": "2024-09-26T08:30:00-04:00",
       "received_at": null,
-      "precision": "SECOND",
+      "precision": "MINUTE",
       "availability_kind": "PROVIDER_PUBLISHED",
       "usage": "OBSERVATION",
       "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-third-estimate-corporate-profits-revised-estimate-and-gdp-0",
@@ -135,7 +135,7 @@
         "published_at": "2024-04-25T08:30:00-04:00",
         "available_at": "2024-04-25T08:30:00-04:00",
         "received_at": null,
-        "precision": "SECOND",
+        "precision": "MINUTE",
         "availability_kind": "PROVIDER_PUBLISHED",
         "usage": "OBSERVATION",
         "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-first-quarter-2024-advance-estimate",
@@ -144,8 +144,8 @@
       "expected": "PASS",
       "receipt": {
         "schema_version": 1,
-        "policy": "temporal-evidence-v0.1",
-        "input_sha256": "3aea877bcdd3559d3a666ae46d395ee621a6a5fc5b7651be1260957ff5d50da2",
+        "policy": "temporal-evidence-v0.3",
+        "input_sha256": "df9575556a938f6896a0d0f961d716fd700cc57eb4ee1d486967b644ba72ac17",
         "status": "PASS",
         "counts": {
           "BLOCK": 0,
@@ -154,7 +154,7 @@
         "decisions": 1,
         "findings": [],
         "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
-        "receipt_sha256": "cbb8ab587d714f072bf4fbb6cea7f75ff023b9f47da033d573f18aa67172b302"
+        "receipt_sha256": "e36fcb2b78b10249dcd682cc749f71f2ce2b54406d6e5a18d0e2a4719019ab85"
       }
     },
     {
@@ -182,7 +182,7 @@
         "published_at": "2024-04-25T08:30:00-04:00",
         "available_at": "2024-04-25T08:30:00-04:00",
         "received_at": null,
-        "precision": "SECOND",
+        "precision": "MINUTE",
         "availability_kind": "PROVIDER_PUBLISHED",
         "usage": "OBSERVATION",
         "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-first-quarter-2024-advance-estimate",
@@ -191,8 +191,8 @@
       "expected": "UNVERIFIED",
       "receipt": {
         "schema_version": 1,
-        "policy": "temporal-evidence-v0.1",
-        "input_sha256": "7e5f3f2abc8b7477b1f03468ef1a92959d1fb41a459e0edff31cbbd6d90f87a9",
+        "policy": "temporal-evidence-v0.3",
+        "input_sha256": "701e0a3c462a959bf18a8b31fb9f0dfe0a3d618ae14b1d4a178bf971409dd1b7",
         "status": "UNVERIFIED",
         "counts": {
           "BLOCK": 0,
@@ -208,7 +208,7 @@
           }
         ],
         "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
-        "receipt_sha256": "6fdd2a9af9d3f46a012673d30d0926e91cf69c3cb66960bc4e59fc29f60f5510"
+        "receipt_sha256": "cd82fccf78f0fc3224196847523952f5f75b6de651c6db23dd5ba73badf971e8"
       }
     },
     {
@@ -236,7 +236,7 @@
         "published_at": "2024-05-30T08:30:00-04:00",
         "available_at": "2024-05-30T08:30:00-04:00",
         "received_at": null,
-        "precision": "SECOND",
+        "precision": "MINUTE",
         "availability_kind": "PROVIDER_PUBLISHED",
         "usage": "OBSERVATION",
         "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-first-quarter-2024-second-estimate-and-corporate-profits",
@@ -245,8 +245,8 @@
       "expected": "BLOCK",
       "receipt": {
         "schema_version": 1,
-        "policy": "temporal-evidence-v0.1",
-        "input_sha256": "7dd9b90b6bcdde63f40cd7bcd8f299d9bf3234b10f9401a5cfae271fb5fc7b21",
+        "policy": "temporal-evidence-v0.3",
+        "input_sha256": "edcdaa15f6563a0caabe23caab2d83bc51f9cfd837f4a957edab8cf8874c1f8b",
         "status": "BLOCK",
         "counts": {
           "BLOCK": 2,
@@ -268,7 +268,7 @@
           }
         ],
         "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
-        "receipt_sha256": "13c447a5c719511f984fa991ffe0cc41613d650b869a2345903f4a86a98a1a58"
+        "receipt_sha256": "6f712f31a0b5a1fde0a4461e96ffdef79a0ab23a5de44aa09c4c4bb55a0a51f0"
       }
     },
     {
@@ -296,7 +296,7 @@
         "published_at": "2024-06-27T08:30:00-04:00",
         "available_at": "2024-06-27T08:30:00-04:00",
         "received_at": null,
-        "precision": "SECOND",
+        "precision": "MINUTE",
         "availability_kind": "PROVIDER_PUBLISHED",
         "usage": "OBSERVATION",
         "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-third-estimate-corporate-profits-revised-estimate-and-gdp-industry",
@@ -305,8 +305,8 @@
       "expected": "BLOCK",
       "receipt": {
         "schema_version": 1,
-        "policy": "temporal-evidence-v0.1",
-        "input_sha256": "16029bdd38c76a1bd434f00269360f6fcbb161ed708b2932885558ab2cbcf3b3",
+        "policy": "temporal-evidence-v0.3",
+        "input_sha256": "bc77f7f69635a0a17bcad463cb773cace0786a8b2379b98801248bf01f855653",
         "status": "BLOCK",
         "counts": {
           "BLOCK": 2,
@@ -328,7 +328,7 @@
           }
         ],
         "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
-        "receipt_sha256": "196be5e6501d8357ae92a4965231ecfc2773328ffe7a55b1112cdb712fad152e"
+        "receipt_sha256": "cd24ab63bf76633a19d9bad0dc40a22319dbda9467e5e9a9cc0da2149cbbdd92"
       }
     },
     {
@@ -356,7 +356,7 @@
         "published_at": "2024-04-25T08:30:00-04:00",
         "available_at": "2024-04-25T08:30:00-04:00",
         "received_at": null,
-        "precision": "SECOND",
+        "precision": "MINUTE",
         "availability_kind": "PROVIDER_PUBLISHED",
         "usage": "OBSERVATION",
         "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-first-quarter-2024-advance-estimate",
@@ -365,8 +365,8 @@
       "expected": "PASS",
       "receipt": {
         "schema_version": 1,
-        "policy": "temporal-evidence-v0.1",
-        "input_sha256": "19086297480e83217ce648c216c0b00e06118c13f8118b7f0af7650d315c04e6",
+        "policy": "temporal-evidence-v0.3",
+        "input_sha256": "3787c6b2238f93c4c67ec46651f39132f75f1fb7fc1430c73d4bd50d092d5085",
         "status": "PASS",
         "counts": {
           "BLOCK": 0,
@@ -375,7 +375,7 @@
         "decisions": 1,
         "findings": [],
         "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
-        "receipt_sha256": "9bccefc2524a7e8ca148c737fc3d62638fe8d9b02fff69cb64d4b95f3436d97f"
+        "receipt_sha256": "3f14c7f88c04379c5375474ada7be9c49112a4996b252e7a3d598f9b2e1b7297"
       }
     },
     {
@@ -403,7 +403,7 @@
         "published_at": "2024-05-30T08:30:00-04:00",
         "available_at": "2024-05-30T08:30:00-04:00",
         "received_at": null,
-        "precision": "SECOND",
+        "precision": "MINUTE",
         "availability_kind": "PROVIDER_PUBLISHED",
         "usage": "OBSERVATION",
         "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-first-quarter-2024-second-estimate-and-corporate-profits",
@@ -412,8 +412,8 @@
       "expected": "PASS",
       "receipt": {
         "schema_version": 1,
-        "policy": "temporal-evidence-v0.1",
-        "input_sha256": "c95e0d3d9f134f381a571055ac850bf90a8cf2e5ca0dbb9c06b2125a05e21bce",
+        "policy": "temporal-evidence-v0.3",
+        "input_sha256": "383622a70f84da5cfa44da7ac95ee71ebef9fb66149d3b05a4c6aad2be9e23ad",
         "status": "PASS",
         "counts": {
           "BLOCK": 0,
@@ -422,7 +422,7 @@
         "decisions": 1,
         "findings": [],
         "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
-        "receipt_sha256": "da572c7d786fee4e53072d1baf2991215418f62b4cc8ccbc9443e1c88ae53754"
+        "receipt_sha256": "c4826d9a1fed40b8ae45052a2cf3fc35d9ec5a24d2db74144c99ef988257e2fe"
       }
     },
     {
@@ -450,7 +450,7 @@
         "published_at": "2024-05-30T08:30:00-04:00",
         "available_at": "2024-05-30T08:30:00-04:00",
         "received_at": null,
-        "precision": "SECOND",
+        "precision": "MINUTE",
         "availability_kind": "PROVIDER_PUBLISHED",
         "usage": "OBSERVATION",
         "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-first-quarter-2024-second-estimate-and-corporate-profits",
@@ -459,8 +459,8 @@
       "expected": "UNVERIFIED",
       "receipt": {
         "schema_version": 1,
-        "policy": "temporal-evidence-v0.1",
-        "input_sha256": "298bcf17d018e97f6a0f5fb2d530607c63bb8f9a7cac4f0f1076c59aeeee2e87",
+        "policy": "temporal-evidence-v0.3",
+        "input_sha256": "5f41d72423cd070d73c41a5d8be7dabeaf685ea4483aa974d96d51ba92ae0422",
         "status": "UNVERIFIED",
         "counts": {
           "BLOCK": 0,
@@ -476,7 +476,7 @@
           }
         ],
         "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
-        "receipt_sha256": "db8c9ccb473ff4ec74fe2c4a3e6e3e8e47c13b40689909c73dd4dbf990b1b96e"
+        "receipt_sha256": "5baff0e3f970557aa35ad8e4eb2586d4ed9960545e6a334bc50c57dd144a7095"
       }
     },
     {
@@ -504,7 +504,7 @@
         "published_at": "2024-06-27T08:30:00-04:00",
         "available_at": "2024-06-27T08:30:00-04:00",
         "received_at": null,
-        "precision": "SECOND",
+        "precision": "MINUTE",
         "availability_kind": "PROVIDER_PUBLISHED",
         "usage": "OBSERVATION",
         "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-third-estimate-corporate-profits-revised-estimate-and-gdp-industry",
@@ -513,8 +513,8 @@
       "expected": "BLOCK",
       "receipt": {
         "schema_version": 1,
-        "policy": "temporal-evidence-v0.1",
-        "input_sha256": "7318ead7567b53cdcc6cb67f555da15c4cafcfcfef62b049d7e209daf0a400c4",
+        "policy": "temporal-evidence-v0.3",
+        "input_sha256": "e70ec73d801c55d61845403bb2485d24aac5939a432794b08d35441cca27fc90",
         "status": "BLOCK",
         "counts": {
           "BLOCK": 2,
@@ -536,7 +536,7 @@
           }
         ],
         "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
-        "receipt_sha256": "21db5be6afa1ffe78820ee51b788be6bf76b9508cc4f7072b081a61272b05d32"
+        "receipt_sha256": "884763dbbfa004b259a5fe69c9edbfc3377722d06e03e68f466525bf9354bd9b"
       }
     },
     {
@@ -564,7 +564,7 @@
         "published_at": "2024-04-25T08:30:00-04:00",
         "available_at": "2024-04-25T08:30:00-04:00",
         "received_at": null,
-        "precision": "SECOND",
+        "precision": "MINUTE",
         "availability_kind": "PROVIDER_PUBLISHED",
         "usage": "OBSERVATION",
         "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-first-quarter-2024-advance-estimate",
@@ -573,8 +573,8 @@
       "expected": "PASS",
       "receipt": {
         "schema_version": 1,
-        "policy": "temporal-evidence-v0.1",
-        "input_sha256": "b3c0f6749d02c9b4a6f44a8247ae692c80aab61ca1c898c6e0ba00e47b1a6130",
+        "policy": "temporal-evidence-v0.3",
+        "input_sha256": "f514e76a156b86522944bbac77a9444ddfb430cf4b7f2ec313438e545d96dd92",
         "status": "PASS",
         "counts": {
           "BLOCK": 0,
@@ -583,7 +583,7 @@
         "decisions": 1,
         "findings": [],
         "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
-        "receipt_sha256": "7e790045f2456d3b7dc15ca3c0e05011c253ed5ceaf2f5f06c1a579082cb6775"
+        "receipt_sha256": "8563766a84e71d872258a2734e8b886d66bc78643cfa128e73fce0b2c9e620a5"
       }
     },
     {
@@ -611,7 +611,7 @@
         "published_at": "2024-05-30T08:30:00-04:00",
         "available_at": "2024-05-30T08:30:00-04:00",
         "received_at": null,
-        "precision": "SECOND",
+        "precision": "MINUTE",
         "availability_kind": "PROVIDER_PUBLISHED",
         "usage": "OBSERVATION",
         "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-first-quarter-2024-second-estimate-and-corporate-profits",
@@ -620,8 +620,8 @@
       "expected": "PASS",
       "receipt": {
         "schema_version": 1,
-        "policy": "temporal-evidence-v0.1",
-        "input_sha256": "d5583a5518b9be4940a0a3d5016d95faf5b3debc9a94472c1217b0d1b151ef7a",
+        "policy": "temporal-evidence-v0.3",
+        "input_sha256": "56e025732ea7188bfd4422764016a3b9d716a0d2ea77495c6ecc9c2bf8daa642",
         "status": "PASS",
         "counts": {
           "BLOCK": 0,
@@ -630,7 +630,7 @@
         "decisions": 1,
         "findings": [],
         "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
-        "receipt_sha256": "4cdc4ae7ede91258c7e40c2f0a46953217738555442c958ebc4707ec46a99e7e"
+        "receipt_sha256": "7f9e88867a55be5aa177d755678e941e44ce2611b420a67ca49bdb44c8f95a65"
       }
     },
     {
@@ -658,7 +658,7 @@
         "published_at": "2024-06-27T08:30:00-04:00",
         "available_at": "2024-06-27T08:30:00-04:00",
         "received_at": null,
-        "precision": "SECOND",
+        "precision": "MINUTE",
         "availability_kind": "PROVIDER_PUBLISHED",
         "usage": "OBSERVATION",
         "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-third-estimate-corporate-profits-revised-estimate-and-gdp-industry",
@@ -667,8 +667,8 @@
       "expected": "PASS",
       "receipt": {
         "schema_version": 1,
-        "policy": "temporal-evidence-v0.1",
-        "input_sha256": "45fe58219d24a8f3238e8e7f0038451ed9400867d81b3026bb94c58243a8a2b5",
+        "policy": "temporal-evidence-v0.3",
+        "input_sha256": "30b638dc0fa08c57f93ab0e2ae84a8004991115ca5ced3184b3daec582829c5c",
         "status": "PASS",
         "counts": {
           "BLOCK": 0,
@@ -677,7 +677,7 @@
         "decisions": 1,
         "findings": [],
         "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
-        "receipt_sha256": "fc33f13e3a6a4987231e05ecbe0758c5781bf1029907b8769ac5df908592e119"
+        "receipt_sha256": "bc63c39ac493317dd46b7f9e59092d1a2fd7a4f69847f6c2f88a8d37b58b7c72"
       }
     },
     {
@@ -705,7 +705,7 @@
         "published_at": "2024-06-27T08:30:00-04:00",
         "available_at": "2024-06-27T08:30:00-04:00",
         "received_at": null,
-        "precision": "SECOND",
+        "precision": "MINUTE",
         "availability_kind": "PROVIDER_PUBLISHED",
         "usage": "OBSERVATION",
         "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-third-estimate-corporate-profits-revised-estimate-and-gdp-industry",
@@ -714,8 +714,8 @@
       "expected": "UNVERIFIED",
       "receipt": {
         "schema_version": 1,
-        "policy": "temporal-evidence-v0.1",
-        "input_sha256": "319c54e772476b362e9702d5ac7b1b370ce3e13ce2c547a8176f37752650f7d3",
+        "policy": "temporal-evidence-v0.3",
+        "input_sha256": "24169f453b7d2255677eb5bce3d3eef42ea155121ca692059aecf02ebfd0840e",
         "status": "UNVERIFIED",
         "counts": {
           "BLOCK": 0,
@@ -731,7 +731,7 @@
           }
         ],
         "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
-        "receipt_sha256": "2947550d81bff5eaf69d24eb9ac7cc45ae0ffe5d963df482084aae9ca2635d9c"
+        "receipt_sha256": "6ea472d2fac286399c88a6fd4e799232058892f20a23d99a95a3f908aef9b11b"
       }
     },
     {
@@ -759,7 +759,7 @@
         "published_at": "2024-07-25T08:30:00-04:00",
         "available_at": "2024-07-25T08:30:00-04:00",
         "received_at": null,
-        "precision": "SECOND",
+        "precision": "MINUTE",
         "availability_kind": "PROVIDER_PUBLISHED",
         "usage": "OBSERVATION",
         "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-second-quarter-2024-advance-estimate",
@@ -768,8 +768,8 @@
       "expected": "PASS",
       "receipt": {
         "schema_version": 1,
-        "policy": "temporal-evidence-v0.1",
-        "input_sha256": "6be4327cfb1e0f968b96b25192679bb4977716043f6a20d08a22c5db1435e563",
+        "policy": "temporal-evidence-v0.3",
+        "input_sha256": "e4263969507d06e651389f4f5de5652a628e2a5dfa69f20ec4d4811b20f4ab60",
         "status": "PASS",
         "counts": {
           "BLOCK": 0,
@@ -778,7 +778,7 @@
         "decisions": 1,
         "findings": [],
         "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
-        "receipt_sha256": "d1e55f2c3e93998f3de67312b5bd5b485b213925e5f781051f32567d3ef450f8"
+        "receipt_sha256": "a55903011e37ca895afbda1c2000e606edb0f012fc7285812f6091e9066cc915"
       }
     },
     {
@@ -806,7 +806,7 @@
         "published_at": "2024-07-25T08:30:00-04:00",
         "available_at": "2024-07-25T08:30:00-04:00",
         "received_at": null,
-        "precision": "SECOND",
+        "precision": "MINUTE",
         "availability_kind": "PROVIDER_PUBLISHED",
         "usage": "OBSERVATION",
         "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-second-quarter-2024-advance-estimate",
@@ -815,8 +815,8 @@
       "expected": "UNVERIFIED",
       "receipt": {
         "schema_version": 1,
-        "policy": "temporal-evidence-v0.1",
-        "input_sha256": "052f855efc93731773eb8e485a3c73d088ec357c415b135838f4466143ed17f9",
+        "policy": "temporal-evidence-v0.3",
+        "input_sha256": "0377e7cd9db971a8aaa170dd3f48d4ab28306ce3a270c916b4a29bfa72828fa4",
         "status": "UNVERIFIED",
         "counts": {
           "BLOCK": 0,
@@ -832,7 +832,7 @@
           }
         ],
         "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
-        "receipt_sha256": "c56d4b1872736a1ea8cd24bde9c98d202359cf6616570c1c80fa61bbb4a31cd4"
+        "receipt_sha256": "8af7a7d59e10dc4fb0f8a04d267ebca50fecf4f3e52116e4b12eae46f7ba113e"
       }
     },
     {
@@ -860,7 +860,7 @@
         "published_at": "2024-08-29T08:30:00-04:00",
         "available_at": "2024-08-29T08:30:00-04:00",
         "received_at": null,
-        "precision": "SECOND",
+        "precision": "MINUTE",
         "availability_kind": "PROVIDER_PUBLISHED",
         "usage": "OBSERVATION",
         "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-second-estimate-corporate-profits-preliminary-estimate-second",
@@ -869,8 +869,8 @@
       "expected": "BLOCK",
       "receipt": {
         "schema_version": 1,
-        "policy": "temporal-evidence-v0.1",
-        "input_sha256": "a8a4ab40189073503fb9f1eca53b92f0eb668bc396db82bf810b2e2349a72c18",
+        "policy": "temporal-evidence-v0.3",
+        "input_sha256": "8c8b1df86344598df4c138e855e63cbdfbee3715162391e95c295bf2e4b5a69c",
         "status": "BLOCK",
         "counts": {
           "BLOCK": 2,
@@ -892,7 +892,7 @@
           }
         ],
         "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
-        "receipt_sha256": "a190cd7aa7fa69fba3c0466eefc86a2fd1e90cee0d3211e5c73395dd077f842e"
+        "receipt_sha256": "1bae2dec17ab2d10aecaae850f69e0c27749d4320f8a49bf6fa1f020896bf72a"
       }
     },
     {
@@ -920,7 +920,7 @@
         "published_at": "2024-09-26T08:30:00-04:00",
         "available_at": "2024-09-26T08:30:00-04:00",
         "received_at": null,
-        "precision": "SECOND",
+        "precision": "MINUTE",
         "availability_kind": "PROVIDER_PUBLISHED",
         "usage": "OBSERVATION",
         "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-third-estimate-corporate-profits-revised-estimate-and-gdp-0",
@@ -929,8 +929,8 @@
       "expected": "BLOCK",
       "receipt": {
         "schema_version": 1,
-        "policy": "temporal-evidence-v0.1",
-        "input_sha256": "d61470759af0e3dc7cab9da99be686f0cd3e668dc8676c50ff20cad7187d702d",
+        "policy": "temporal-evidence-v0.3",
+        "input_sha256": "a65e62b447e108d9e5d67b0b35b45672d478fb6c94651bd94ed17f70b12e185a",
         "status": "BLOCK",
         "counts": {
           "BLOCK": 2,
@@ -952,7 +952,7 @@
           }
         ],
         "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
-        "receipt_sha256": "c557a99998dcc93e7e8ae281de24b1ac75ba3b34b812f5b767e8fcaa758ab4b4"
+        "receipt_sha256": "0669ca72309d94be57ff986d186902a78e70043549c1827e2ce1c099342f4efe"
       }
     },
     {
@@ -980,7 +980,7 @@
         "published_at": "2024-07-25T08:30:00-04:00",
         "available_at": "2024-07-25T08:30:00-04:00",
         "received_at": null,
-        "precision": "SECOND",
+        "precision": "MINUTE",
         "availability_kind": "PROVIDER_PUBLISHED",
         "usage": "OBSERVATION",
         "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-second-quarter-2024-advance-estimate",
@@ -989,8 +989,8 @@
       "expected": "PASS",
       "receipt": {
         "schema_version": 1,
-        "policy": "temporal-evidence-v0.1",
-        "input_sha256": "3e8d7c18accccd1aaf8b9f3d77076fbe723e330a0690a318e3a2ddc3527b4996",
+        "policy": "temporal-evidence-v0.3",
+        "input_sha256": "1d5245d6b571da7635a59e40b4c6ca239fdcf29031c75791a78e034e27ec5691",
         "status": "PASS",
         "counts": {
           "BLOCK": 0,
@@ -999,7 +999,7 @@
         "decisions": 1,
         "findings": [],
         "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
-        "receipt_sha256": "2993f5ada79272942b3328021e0b3cfe9d7b92a25263e9d239f68562dc320890"
+        "receipt_sha256": "e1a19400577e7013a19be2a2f89d76798a7fe78f71ec131d4191754646f41177"
       }
     },
     {
@@ -1027,7 +1027,7 @@
         "published_at": "2024-08-29T08:30:00-04:00",
         "available_at": "2024-08-29T08:30:00-04:00",
         "received_at": null,
-        "precision": "SECOND",
+        "precision": "MINUTE",
         "availability_kind": "PROVIDER_PUBLISHED",
         "usage": "OBSERVATION",
         "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-second-estimate-corporate-profits-preliminary-estimate-second",
@@ -1036,8 +1036,8 @@
       "expected": "PASS",
       "receipt": {
         "schema_version": 1,
-        "policy": "temporal-evidence-v0.1",
-        "input_sha256": "ecfdbf0473faa97d613ad0afbc008e788851025d35d9b1d9a9430d2ee25c17b3",
+        "policy": "temporal-evidence-v0.3",
+        "input_sha256": "c2856d4a55857e659fe720563a4ac824a71318837f25cd3a901a6f12adfab39e",
         "status": "PASS",
         "counts": {
           "BLOCK": 0,
@@ -1046,7 +1046,7 @@
         "decisions": 1,
         "findings": [],
         "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
-        "receipt_sha256": "40bc25be14fbb3544eef66548881851c3272ab531ce66ca3e9b9c77ea44bf2fc"
+        "receipt_sha256": "98ac11c4cc24c5f418d009f03d7e07ae0d76196ea5c80e3c643f9a8ba761a0c8"
       }
     },
     {
@@ -1074,7 +1074,7 @@
         "published_at": "2024-08-29T08:30:00-04:00",
         "available_at": "2024-08-29T08:30:00-04:00",
         "received_at": null,
-        "precision": "SECOND",
+        "precision": "MINUTE",
         "availability_kind": "PROVIDER_PUBLISHED",
         "usage": "OBSERVATION",
         "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-second-estimate-corporate-profits-preliminary-estimate-second",
@@ -1083,8 +1083,8 @@
       "expected": "UNVERIFIED",
       "receipt": {
         "schema_version": 1,
-        "policy": "temporal-evidence-v0.1",
-        "input_sha256": "7e022ae50b34beadc8b97d279a4dd74ad5442416a2ec800797946f78a8896800",
+        "policy": "temporal-evidence-v0.3",
+        "input_sha256": "1047cc570509e99e4e5bff161c7f1baf373fe6168257ef16b699365b03b28a43",
         "status": "UNVERIFIED",
         "counts": {
           "BLOCK": 0,
@@ -1100,7 +1100,7 @@
           }
         ],
         "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
-        "receipt_sha256": "44bb3cc7311e983006b4ca8c7489c64827f8b68fc12b453cc6f346f4686f7267"
+        "receipt_sha256": "acd946039d3dad071d54f8410909201d9a2eb1186da16c5736b24ae94d744a3f"
       }
     },
     {
@@ -1128,7 +1128,7 @@
         "published_at": "2024-09-26T08:30:00-04:00",
         "available_at": "2024-09-26T08:30:00-04:00",
         "received_at": null,
-        "precision": "SECOND",
+        "precision": "MINUTE",
         "availability_kind": "PROVIDER_PUBLISHED",
         "usage": "OBSERVATION",
         "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-third-estimate-corporate-profits-revised-estimate-and-gdp-0",
@@ -1137,8 +1137,8 @@
       "expected": "BLOCK",
       "receipt": {
         "schema_version": 1,
-        "policy": "temporal-evidence-v0.1",
-        "input_sha256": "e9e7ed5204ebe39880ee6f2c8ac77a0947e9e686adea7755018cc63999e99948",
+        "policy": "temporal-evidence-v0.3",
+        "input_sha256": "c93b5e51ea7644ec8e4a895586813eaac86263749d2fc959af6d5ab436f6d6e0",
         "status": "BLOCK",
         "counts": {
           "BLOCK": 2,
@@ -1160,7 +1160,7 @@
           }
         ],
         "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
-        "receipt_sha256": "07dbabbad5581a90aab684887d5b2638e305785fcea56d9b464b20d0aa8849be"
+        "receipt_sha256": "656aa34a29a3dda0daf2d6e845bcf9fd972d2ef27074a04ae0bc1caf151a872c"
       }
     },
     {
@@ -1188,7 +1188,7 @@
         "published_at": "2024-07-25T08:30:00-04:00",
         "available_at": "2024-07-25T08:30:00-04:00",
         "received_at": null,
-        "precision": "SECOND",
+        "precision": "MINUTE",
         "availability_kind": "PROVIDER_PUBLISHED",
         "usage": "OBSERVATION",
         "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-second-quarter-2024-advance-estimate",
@@ -1197,8 +1197,8 @@
       "expected": "PASS",
       "receipt": {
         "schema_version": 1,
-        "policy": "temporal-evidence-v0.1",
-        "input_sha256": "e61fb3d1af212ae7d7834fe436e0e3270d7d3391cc134b23558988ce6876b1b9",
+        "policy": "temporal-evidence-v0.3",
+        "input_sha256": "2a06429ae7228e0e8ef35b2f4b644a74dc6c3d1492d81c0fa709db49f4131a5d",
         "status": "PASS",
         "counts": {
           "BLOCK": 0,
@@ -1207,7 +1207,7 @@
         "decisions": 1,
         "findings": [],
         "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
-        "receipt_sha256": "fb832221dade2ed95da52a79e018045b66d487039f3186fd742aec583205db7c"
+        "receipt_sha256": "ce2694d6f535059b43a3feed493896325fe2b94986828e4e6a30f04d88470041"
       }
     },
     {
@@ -1235,7 +1235,7 @@
         "published_at": "2024-08-29T08:30:00-04:00",
         "available_at": "2024-08-29T08:30:00-04:00",
         "received_at": null,
-        "precision": "SECOND",
+        "precision": "MINUTE",
         "availability_kind": "PROVIDER_PUBLISHED",
         "usage": "OBSERVATION",
         "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-second-estimate-corporate-profits-preliminary-estimate-second",
@@ -1244,8 +1244,8 @@
       "expected": "PASS",
       "receipt": {
         "schema_version": 1,
-        "policy": "temporal-evidence-v0.1",
-        "input_sha256": "004c61bf5ad3f83518bdaeb9cf40b066a07154989e53a7a098c5d8e544904a91",
+        "policy": "temporal-evidence-v0.3",
+        "input_sha256": "4922df04494b38e85616892e672e4542a7c963b324526bcbf85e1fd301ca2c20",
         "status": "PASS",
         "counts": {
           "BLOCK": 0,
@@ -1254,7 +1254,7 @@
         "decisions": 1,
         "findings": [],
         "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
-        "receipt_sha256": "d519c26233c22dcc4c858c0a01571237a6e5021f9c700ed9c9932711f4ce6cb7"
+        "receipt_sha256": "032b2652b4586b2c19aa38b69192e6e8af54f683702d947fa8678505774c75f8"
       }
     },
     {
@@ -1282,7 +1282,7 @@
         "published_at": "2024-09-26T08:30:00-04:00",
         "available_at": "2024-09-26T08:30:00-04:00",
         "received_at": null,
-        "precision": "SECOND",
+        "precision": "MINUTE",
         "availability_kind": "PROVIDER_PUBLISHED",
         "usage": "OBSERVATION",
         "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-third-estimate-corporate-profits-revised-estimate-and-gdp-0",
@@ -1291,8 +1291,8 @@
       "expected": "PASS",
       "receipt": {
         "schema_version": 1,
-        "policy": "temporal-evidence-v0.1",
-        "input_sha256": "eb23158213bebb08dcbd5ce3bd038e9b1f921d526a1843ef1114ffe7e9bd89ba",
+        "policy": "temporal-evidence-v0.3",
+        "input_sha256": "a2b83a53a1e4425793109330a2ce10c7344829ec00ab833432a78e12129081ce",
         "status": "PASS",
         "counts": {
           "BLOCK": 0,
@@ -1301,7 +1301,7 @@
         "decisions": 1,
         "findings": [],
         "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
-        "receipt_sha256": "6c420602209209d15b110d84359206850dabc5e0b1329d00b4d3249848b8295b"
+        "receipt_sha256": "66c74890188670687925fd42aaff3a1437230aa8657a4ef857a9c274f58aa476"
       }
     },
     {
@@ -1329,7 +1329,7 @@
         "published_at": "2024-09-26T08:30:00-04:00",
         "available_at": "2024-09-26T08:30:00-04:00",
         "received_at": null,
-        "precision": "SECOND",
+        "precision": "MINUTE",
         "availability_kind": "PROVIDER_PUBLISHED",
         "usage": "OBSERVATION",
         "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-third-estimate-corporate-profits-revised-estimate-and-gdp-0",
@@ -1338,8 +1338,8 @@
       "expected": "UNVERIFIED",
       "receipt": {
         "schema_version": 1,
-        "policy": "temporal-evidence-v0.1",
-        "input_sha256": "4df6849f6c86038591a9a35b0f3ffd16559cbec8b8d33c5bc88f9abcb6a40a63",
+        "policy": "temporal-evidence-v0.3",
+        "input_sha256": "71a7f3627545d485ac6f58e68da07a92cfa496b68b5db38f189467436fee5f9b",
         "status": "UNVERIFIED",
         "counts": {
           "BLOCK": 0,
@@ -1355,7 +1355,7 @@
           }
         ],
         "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
-        "receipt_sha256": "07d6818c9607c360d02bc38b35702e6b1a6a1b4bcd3ac9abeff9e54a931f5c8f"
+        "receipt_sha256": "9ff41f9d2cc7514f39769b29951e0f01f25b5b42455ebab46de8fe061d8d05f1"
       }
     }
   ],

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "policy": "temporal-evidence-v0.1",
+  "policy": "temporal-evidence-v0.3",
   "input_sha256": "83ebc0424d187725a25005e875b96e417b775eb5a32e30afc74e060f442ad01c",
   "status": "BLOCK",
   "counts": {
@@ -23,5 +23,5 @@
     }
   ],
   "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
-  "receipt_sha256": "bf4bd2be2f9f11687bc3833e165233342dadae4306f787d0d1a1b8ab5cc0d3f3"
+  "receipt_sha256": "0f759c8f5bd8e9c94e2babddf2b7ab78882fc1ee1bbf0b0bc9f7e40513dc6792"
 }

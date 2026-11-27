@@ -2,7 +2,7 @@
 
 **Can the evidence behind a decision be shown to have been available when the decision was made?**
 
-A local-first Python toolkit for auditing declared time-aware evidence, replaying exact versions, and detecting inconsistent historical evaluation manifests. Experimental release 0.2.0; name provisional. No LLM, network access, paid API, or external actions are needed.
+A local-first Python toolkit for auditing declared time-aware evidence, replaying exact versions, and detecting inconsistent historical evaluation manifests. Experimental release candidate 0.3.0; name provisional. No LLM, network access, paid API, or external actions are needed.
 
 ## Quick start (Python 3.10+)
 
@@ -47,4 +47,8 @@ The audit is independent of the upstream predictor. A PASS is not an endorsement
 
 ## Contract and limits
 
-See [contract](docs/CONTRACT.md), [roadmap](docs/ROADMAP.md), and [security](SECURITY.md). All inputs are local JSON; no code execution or external network requests. The initial split audit only handles explicit train/test manifests and is not a universal leakage detector. Day-level evidence is UNVERIFIED. This preview is intended for private review before a public release. Licensing and final package naming pending owner review.
+See [contract](docs/CONTRACT.md), [roadmap](docs/ROADMAP.md), and [security](SECURITY.md). All inputs are local JSON; no code execution or external network requests. The initial split audit only handles explicit train/test manifests and is not a universal leakage detector. Minute-level provider metadata is handled conservatively; day-level evidence is UNVERIFIED. This preview is intended for private review before a public release. Apache-2.0 is proposed, not yet granted; public release and final package naming require owner approval. See [release audit](docs/RELEASE_AUDIT.md).
+
+## Install locally
+
+`python -m pip install .` (build tooling required). Runtime has no third-party dependencies. Audit receipts now use policy `temporal-evidence-v0.3`; earlier receipts must be verified with their original version, not silently upgraded.
