@@ -51,8 +51,11 @@ test_preserve_known_block (test_hardening.HardeningTests.test_preserve_known_blo
 test_provider_minute_interval (test_hardening.HardeningTests.test_provider_minute_interval) ... ok
 test_size_bound (test_hardening.HardeningTests.test_size_bound) ... ok
 test_typed_receipt (test_hardening.HardeningTests.test_typed_receipt) ... ok
+test_original_receipts_and_raw_records (test_site.SiteTests.test_original_receipts_and_raw_records) ... ok
+test_reproducible_site (test_site.SiteTests.test_reproducible_site) ... ok
+test_roadmap_disclosed (test_site.SiteTests.test_roadmap_disclosed) ... ok
 
 ----------------------------------------------------------------------
-Ran 53 tests in 2.030s
+Ran 56 tests in 1.677s
 
 OK

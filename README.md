@@ -1,54 +1,80 @@
-# Open Decision Core · MVP preview
+# Open Decision Core
 
-**Can the evidence behind a decision be shown to have been available when the decision was made?**
+**Could you have known it then?**
 
-A local-first Python toolkit for auditing declared time-aware evidence, replaying exact versions, and detecting inconsistent historical evaluation manifests. Experimental release candidate 0.3.0; name provisional. No LLM, network access, paid API, or external actions are needed.
+A local-first toolkit for checking whether the evidence behind an AI or ML decision was available at its declared cutoff. Open Decision Core audits exact versions, lineage and historical split manifests, then produces deterministic, reproducible receipts.
 
-## Quick start (Python 3.10+)
+**Release candidate 0.3.0** · Python 3.10+ · No runtime dependencies · No API keys
+
+[Project website (local preview)](site/index.html) · [Interactive BEA demo](examples/bea/index.html) · [Evidence contract](docs/CONTRACT.md) · [Roadmap](docs/ROADMAP.md)
+
+## Why it matters
+
+An event date is not the date its data became available. A revised value may accidentally enter a historical backtest, even when the original event happened earlier. Open Decision Core makes the version and availability assumptions explicit, and rejects known violations rather than silently using the latest data.
+
+| Verdict | Meaning |
+|---|---|
+| PASS | No finding under the implemented declared-evidence contract |
+| BLOCK | A concrete contract violation |
+| UNVERIFIED | Missing, unsupported or insufficiently precise evidence |
+
+## Try it in one minute
+
+From a checkout of the repository:
 
 ```sh
 python -m odc audit examples/timely.json
 python -m odc audit examples/future-revision.json
 python -m odc audit examples/unknown.json
-python -m odc replay examples/demo.json timely
 python -m odc verify examples/demo.json examples/demo.receipt.json
-python -m odc report examples/demo.json -o report.html
-python -m unittest discover -s tests -v
 ```
 
-Open `examples/demo.html` in a browser for an already-generated audit. `BLOCK` and `UNVERIFIED` deliberately return non-zero exit codes. The three examples are **synthetic** and do not prove real-world predictive performance.
+The first three commands demonstrate PASS, BLOCK and UNVERIFIED respectively. Exit codes: 0, 2, 3; malformed input or operational errors return 4. An optional local install is `python -m pip install .` (build tools required).
 
-| Code | Meaning |
-|---|---|
-| 0 | PASS: no finding under implemented declared-contract checks |
-| 2 | BLOCK: concrete contract violation |
-| 3 | UNVERIFIED: missing/unsupported evidence |
-| 4 | Malformed input or operational error |
+Python SDK:
 
-## Real-data demonstration (v0.2)
+```python
+import json
+from pathlib import Path
+from odc import audit, verify
 
-Open [examples/bea/index.html](examples/bea/index.html) locally in a browser. It shows actual Python-generated receipts for six manually transcribed U.S. BEA GDP releases, not a client-side substitute for the audit engine. The interface selects from 24 predefined cases and exports a bundle and matching receipt. No uploads, server, keys or paid API required.
+bundle = json.loads(Path('examples/timely.json').read_text())
+receipt = audit(bundle)
+assert verify(bundle, receipt)
+print(receipt['status'])
+```
+
+Other commands: `python -m odc replay examples/demo.json timely`, `python -m odc report examples/demo.json -o report.html`, and `python -m odc split-check manifest.json`. See the contract for input format. Receipt policy `temporal-evidence-v0.3` is versioned; use the original version to verify older receipts.
+
+## Real-data case study
+
+Six archived U.S. Bureau of Economic Analysis GDP releases (2024 Q1/Q2), manually transcribed with source links. A fixed matrix of 24 designed scenarios exercises version availability and the absence of historical local-receipt evidence. Results: 12 PASS, 6 BLOCK, 6 UNVERIFIED; all 24 matched expected verdicts. These are correlated controlled cases, not an independent estimate of accuracy.
+
+Open `site/index.html` locally to explore the project and replay cases. The interface selects actual Python-generated receipts, exports the bundle and receipt, and makes no network requests except links you choose to open. It does not run arbitrary audits in the browser.
 
 ```sh
 python -m odc.benchmark examples/bea/releases.json -o examples/bea/results.json
 python -m odc.demo examples/bea/releases.json -o examples/bea/index.html
+python site/build.py
+python -m unittest discover -s tests -v
 ```
 
-See [methodology and limitations](docs/BEA_BENCHMARK.md). 24/24 designed scenarios match the expected verdicts; this is a small controlled benchmark, not a claim of general accuracy or predictive performance. Archived release times are provider metadata, not independently captured local receipts.
+Read the [methodology and limitations](docs/BEA_BENCHMARK.md).
 
-## Architecture
+## Ecosystem
 
-- **Core**: evidence/decision contract, exact-version identifiers, deterministic SHA-256 receipts.
-- **Temporal auditor**: current MVP; timestamp order, late source/version, lineage, unknown evidence and split manifest checks.
-- **Policy engine**: future selective decisions and risk/coverage evaluation; not implemented.
-- **Research Lab**: future model and policy evaluation; currently an interactive audit replay and static HTML report.
+| Layer | Status | Purpose |
+|---|---|---|
+| Temporal Audit | Implemented MVP | Exact-version evidence, cutoff and lineage checks, receipts, split audit |
+| Decision Policy | Planned | Empirically evaluate risk, abstention and human review policies |
+| Research Lab | Planned | Independent outcome evaluation, calibration and reproducible research |
 
-The audit is independent of the upstream predictor. A PASS is not an endorsement, a security guarantee, proof of source truth, or permission to execute an action. Hashes detect changes relative to a retained receipt, not a malicious party able to replace both input and receipt. Explicit timestamps can be false; provider publication time is a proxy, not historical local receipt.
+## Trust boundaries
 
-## Contract and limits
+PASS is not proof of source truth, historical existence, predictive accuracy, security or authorization. Provider publication times are proxies, not actual local receipt. Minute-level proxies have conservative interval semantics; unsupported precision is unverified. Hashes detect differences from retained originals, not malicious replacement of both input and receipt. Split checks only inspect declared manifests. Use trusted local inputs; do not expose the preview as an unauthenticated upload endpoint.
 
-See [contract](docs/CONTRACT.md), [roadmap](docs/ROADMAP.md), and [security](SECURITY.md). All inputs are local JSON; no code execution or external network requests. The initial split audit only handles explicit train/test manifests and is not a universal leakage detector. Minute-level provider metadata is handled conservatively; day-level evidence is UNVERIFIED. This preview is intended for private review before a public release. Apache-2.0 is proposed, not yet granted; public release and final package naming require owner approval. See [release audit](docs/RELEASE_AUDIT.md).
+## Contributing and release status
 
-## Install locally
+[Contributing](CONTRIBUTING.md) · [Security and limitations](SECURITY.md) · [Release audit](docs/RELEASE_AUDIT.md) · [Launch checklist](docs/LAUNCH_CHECKLIST.md)
 
-`python -m pip install .` (build tooling required). Runtime has no third-party dependencies. Audit receipts now use policy `temporal-evidence-v0.3`; earlier receipts must be verified with their original version, not silently upgraded.
+This is a private release candidate being prepared for open-source release. Apache-2.0 is proposed, not yet granted; owner approval and rights confirmation are pending. Project/distribution names are provisional. No external adoption or independent security certification is claimed.
