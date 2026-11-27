@@ -19,7 +19,7 @@ def build_results(fixture):
         records.append(dict(id=r['quarter']+'-'+r['stage'], source='US-BEA', entity=r['quarter'],
             feature='real_gdp_growth_annualized_pct', version=r['release'], value=r['value'],
             event_time=ENDS[r['quarter']]+'T23:59:59-04:00', published_at=stamp, available_at=stamp,
-            received_at=None, precision='SECOND', availability_kind='PROVIDER_PUBLISHED',
+            received_at=None, precision='MINUTE', availability_kind='PROVIDER_PUBLISHED',
             usage='OBSERVATION', source_ref=r['url'], parents=[]))
     cases = []
     for q in ENDS:

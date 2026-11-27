@@ -1,4 +1,4 @@
-import argparse, json, sys
+import argparse, json, sys, math
 from pathlib import Path
 from html import escape
 from .core import audit, replay, verify, split_check
@@ -13,7 +13,11 @@ def load(path):
     def invalid(value): raise ValueError('invalid number: '+value)
     p=Path(path)
     if p.stat().st_size > 32*1024*1024: raise ValueError('input exceeds 32 MiB')
-    return json.loads(p.read_text(),object_pairs_hook=pairs,parse_constant=invalid)
+    def finite(value):
+        result=float(value)
+        if not math.isfinite(result): raise ValueError('nonfinite number')
+        return result
+    return json.loads(p.read_text(encoding='utf-8'),object_pairs_hook=pairs,parse_constant=invalid,parse_float=finite)
 
 def html_report(receipt):
     esc=lambda x: escape(str(x))
