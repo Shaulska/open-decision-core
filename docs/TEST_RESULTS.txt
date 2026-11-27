@@ -1,3 +1,13 @@
+test_all_expected (test_benchmark.BenchmarkTests.test_all_expected) ... ok
+test_checked_in_outputs (test_benchmark.BenchmarkTests.test_checked_in_outputs) ... ok
+test_deterministic (test_benchmark.BenchmarkTests.test_deterministic) ... ok
+test_equal_value_still_leaks (test_benchmark.BenchmarkTests.test_equal_value_still_leaks) ... ok
+test_every_receipt (test_benchmark.BenchmarkTests.test_every_receipt) ... ok
+test_export_raw_record_numbers (test_benchmark.BenchmarkTests.test_export_raw_record_numbers) ... ok
+test_fixture_membership (test_benchmark.BenchmarkTests.test_fixture_membership) ... ok
+test_html_payload (test_benchmark.BenchmarkTests.test_html_payload) ... ok
+test_no_fabricated_receipt (test_benchmark.BenchmarkTests.test_no_fabricated_receipt) ... ok
+test_script_escaping (test_benchmark.BenchmarkTests.test_script_escaping) ... ok
 test_bad_order (test_core.AuditTests.test_bad_order) ... ok
 test_clean (test_core.AuditTests.test_clean) ... ok
 test_cli_exit (test_core.AuditTests.test_cli_exit) ... ok
@@ -31,6 +41,6 @@ test_overlap (test_core.SplitTests.test_overlap) ... ok
 test_unknown (test_core.SplitTests.test_unknown) ... ok
 
 ----------------------------------------------------------------------
-Ran 31 tests in 2.000s
+Ran 41 tests in 1.815s
 
 OK

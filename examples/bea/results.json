@@ -1,0 +1,1371 @@
+{
+  "schema_version": 1,
+  "fixture_sha256": "40920385f10da2152cb17db273abf33204b573ab65e3426211424d510de83c5c",
+  "source": "U.S. Bureau of Economic Analysis",
+  "scope": "Manually transcribed headline estimates from six archived releases. Not a complete vintage history.",
+  "availability": "Official release header (8:30 a.m. EDT), used as a declared provider-time proxy; not proof of local receipt or second-level publication. Decisions are on the following day.",
+  "unit": "percent, annualized quarter-over-quarter real GDP growth",
+  "records": [
+    {
+      "id": "2024-Q1-advance",
+      "source": "US-BEA",
+      "entity": "2024-Q1",
+      "feature": "real_gdp_growth_annualized_pct",
+      "version": "24-16",
+      "value": 1.6,
+      "event_time": "2024-03-31T23:59:59-04:00",
+      "published_at": "2024-04-25T08:30:00-04:00",
+      "available_at": "2024-04-25T08:30:00-04:00",
+      "received_at": null,
+      "precision": "SECOND",
+      "availability_kind": "PROVIDER_PUBLISHED",
+      "usage": "OBSERVATION",
+      "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-first-quarter-2024-advance-estimate",
+      "parents": []
+    },
+    {
+      "id": "2024-Q1-second",
+      "source": "US-BEA",
+      "entity": "2024-Q1",
+      "feature": "real_gdp_growth_annualized_pct",
+      "version": "24-19",
+      "value": 1.3,
+      "event_time": "2024-03-31T23:59:59-04:00",
+      "published_at": "2024-05-30T08:30:00-04:00",
+      "available_at": "2024-05-30T08:30:00-04:00",
+      "received_at": null,
+      "precision": "SECOND",
+      "availability_kind": "PROVIDER_PUBLISHED",
+      "usage": "OBSERVATION",
+      "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-first-quarter-2024-second-estimate-and-corporate-profits",
+      "parents": []
+    },
+    {
+      "id": "2024-Q1-third",
+      "source": "US-BEA",
+      "entity": "2024-Q1",
+      "feature": "real_gdp_growth_annualized_pct",
+      "version": "24-27",
+      "value": 1.4,
+      "event_time": "2024-03-31T23:59:59-04:00",
+      "published_at": "2024-06-27T08:30:00-04:00",
+      "available_at": "2024-06-27T08:30:00-04:00",
+      "received_at": null,
+      "precision": "SECOND",
+      "availability_kind": "PROVIDER_PUBLISHED",
+      "usage": "OBSERVATION",
+      "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-third-estimate-corporate-profits-revised-estimate-and-gdp-industry",
+      "parents": []
+    },
+    {
+      "id": "2024-Q2-advance",
+      "source": "US-BEA",
+      "entity": "2024-Q2",
+      "feature": "real_gdp_growth_annualized_pct",
+      "version": "24-33",
+      "value": 2.8,
+      "event_time": "2024-06-30T23:59:59-04:00",
+      "published_at": "2024-07-25T08:30:00-04:00",
+      "available_at": "2024-07-25T08:30:00-04:00",
+      "received_at": null,
+      "precision": "SECOND",
+      "availability_kind": "PROVIDER_PUBLISHED",
+      "usage": "OBSERVATION",
+      "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-second-quarter-2024-advance-estimate",
+      "parents": []
+    },
+    {
+      "id": "2024-Q2-second",
+      "source": "US-BEA",
+      "entity": "2024-Q2",
+      "feature": "real_gdp_growth_annualized_pct",
+      "version": "24-38",
+      "value": 3.0,
+      "event_time": "2024-06-30T23:59:59-04:00",
+      "published_at": "2024-08-29T08:30:00-04:00",
+      "available_at": "2024-08-29T08:30:00-04:00",
+      "received_at": null,
+      "precision": "SECOND",
+      "availability_kind": "PROVIDER_PUBLISHED",
+      "usage": "OBSERVATION",
+      "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-second-estimate-corporate-profits-preliminary-estimate-second",
+      "parents": []
+    },
+    {
+      "id": "2024-Q2-third",
+      "source": "US-BEA",
+      "entity": "2024-Q2",
+      "feature": "real_gdp_growth_annualized_pct",
+      "version": "24-43",
+      "value": 3.0,
+      "event_time": "2024-06-30T23:59:59-04:00",
+      "published_at": "2024-09-26T08:30:00-04:00",
+      "available_at": "2024-09-26T08:30:00-04:00",
+      "received_at": null,
+      "precision": "SECOND",
+      "availability_kind": "PROVIDER_PUBLISHED",
+      "usage": "OBSERVATION",
+      "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-third-estimate-corporate-profits-revised-estimate-and-gdp-0",
+      "parents": []
+    }
+  ],
+  "cases": [
+    {
+      "id": "2024-Q1:advance:advance:PROVIDER_ASOF",
+      "quarter": "2024-Q1",
+      "cutoff_stage": "advance",
+      "selected_stage": "advance",
+      "mode": "PROVIDER_ASOF",
+      "decision": {
+        "id": "2024-Q1:advance:advance:PROVIDER_ASOF",
+        "decision_at": "2024-04-26T12:00:00-04:00",
+        "evidence_ids": [
+          "2024-Q1-advance"
+        ],
+        "mode": "PROVIDER_ASOF"
+      },
+      "evidence": {
+        "id": "2024-Q1-advance",
+        "source": "US-BEA",
+        "entity": "2024-Q1",
+        "feature": "real_gdp_growth_annualized_pct",
+        "version": "24-16",
+        "value": 1.6,
+        "event_time": "2024-03-31T23:59:59-04:00",
+        "published_at": "2024-04-25T08:30:00-04:00",
+        "available_at": "2024-04-25T08:30:00-04:00",
+        "received_at": null,
+        "precision": "SECOND",
+        "availability_kind": "PROVIDER_PUBLISHED",
+        "usage": "OBSERVATION",
+        "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-first-quarter-2024-advance-estimate",
+        "parents": []
+      },
+      "expected": "PASS",
+      "receipt": {
+        "schema_version": 1,
+        "policy": "temporal-evidence-v0.1",
+        "input_sha256": "3aea877bcdd3559d3a666ae46d395ee621a6a5fc5b7651be1260957ff5d50da2",
+        "status": "PASS",
+        "counts": {
+          "BLOCK": 0,
+          "UNVERIFIED": 0
+        },
+        "decisions": 1,
+        "findings": [],
+        "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
+        "receipt_sha256": "cbb8ab587d714f072bf4fbb6cea7f75ff023b9f47da033d573f18aa67172b302"
+      }
+    },
+    {
+      "id": "2024-Q1:advance:advance:OBSERVED_REPLAY",
+      "quarter": "2024-Q1",
+      "cutoff_stage": "advance",
+      "selected_stage": "advance",
+      "mode": "OBSERVED_REPLAY",
+      "decision": {
+        "id": "2024-Q1:advance:advance:OBSERVED_REPLAY",
+        "decision_at": "2024-04-26T12:00:00-04:00",
+        "evidence_ids": [
+          "2024-Q1-advance"
+        ],
+        "mode": "OBSERVED_REPLAY"
+      },
+      "evidence": {
+        "id": "2024-Q1-advance",
+        "source": "US-BEA",
+        "entity": "2024-Q1",
+        "feature": "real_gdp_growth_annualized_pct",
+        "version": "24-16",
+        "value": 1.6,
+        "event_time": "2024-03-31T23:59:59-04:00",
+        "published_at": "2024-04-25T08:30:00-04:00",
+        "available_at": "2024-04-25T08:30:00-04:00",
+        "received_at": null,
+        "precision": "SECOND",
+        "availability_kind": "PROVIDER_PUBLISHED",
+        "usage": "OBSERVATION",
+        "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-first-quarter-2024-advance-estimate",
+        "parents": []
+      },
+      "expected": "UNVERIFIED",
+      "receipt": {
+        "schema_version": 1,
+        "policy": "temporal-evidence-v0.1",
+        "input_sha256": "7e5f3f2abc8b7477b1f03468ef1a92959d1fb41a459e0edff31cbbd6d90f87a9",
+        "status": "UNVERIFIED",
+        "counts": {
+          "BLOCK": 0,
+          "UNVERIFIED": 1
+        },
+        "decisions": 1,
+        "findings": [
+          {
+            "code": "NO_LOCAL_RECEIPT",
+            "status": "UNVERIFIED",
+            "record": "2024-Q1-advance",
+            "decision": "2024-Q1:advance:advance:OBSERVED_REPLAY"
+          }
+        ],
+        "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
+        "receipt_sha256": "6fdd2a9af9d3f46a012673d30d0926e91cf69c3cb66960bc4e59fc29f60f5510"
+      }
+    },
+    {
+      "id": "2024-Q1:advance:second:PROVIDER_ASOF",
+      "quarter": "2024-Q1",
+      "cutoff_stage": "advance",
+      "selected_stage": "second",
+      "mode": "PROVIDER_ASOF",
+      "decision": {
+        "id": "2024-Q1:advance:second:PROVIDER_ASOF",
+        "decision_at": "2024-04-26T12:00:00-04:00",
+        "evidence_ids": [
+          "2024-Q1-second"
+        ],
+        "mode": "PROVIDER_ASOF"
+      },
+      "evidence": {
+        "id": "2024-Q1-second",
+        "source": "US-BEA",
+        "entity": "2024-Q1",
+        "feature": "real_gdp_growth_annualized_pct",
+        "version": "24-19",
+        "value": 1.3,
+        "event_time": "2024-03-31T23:59:59-04:00",
+        "published_at": "2024-05-30T08:30:00-04:00",
+        "available_at": "2024-05-30T08:30:00-04:00",
+        "received_at": null,
+        "precision": "SECOND",
+        "availability_kind": "PROVIDER_PUBLISHED",
+        "usage": "OBSERVATION",
+        "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-first-quarter-2024-second-estimate-and-corporate-profits",
+        "parents": []
+      },
+      "expected": "BLOCK",
+      "receipt": {
+        "schema_version": 1,
+        "policy": "temporal-evidence-v0.1",
+        "input_sha256": "7dd9b90b6bcdde63f40cd7bcd8f299d9bf3234b10f9401a5cfae271fb5fc7b21",
+        "status": "BLOCK",
+        "counts": {
+          "BLOCK": 2,
+          "UNVERIFIED": 0
+        },
+        "decisions": 1,
+        "findings": [
+          {
+            "code": "LATE_AVAILABLE_AT",
+            "status": "BLOCK",
+            "record": "2024-Q1-second",
+            "decision": "2024-Q1:advance:second:PROVIDER_ASOF"
+          },
+          {
+            "code": "LATE_PUBLISHED_AT",
+            "status": "BLOCK",
+            "record": "2024-Q1-second",
+            "decision": "2024-Q1:advance:second:PROVIDER_ASOF"
+          }
+        ],
+        "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
+        "receipt_sha256": "13c447a5c719511f984fa991ffe0cc41613d650b869a2345903f4a86a98a1a58"
+      }
+    },
+    {
+      "id": "2024-Q1:advance:third:PROVIDER_ASOF",
+      "quarter": "2024-Q1",
+      "cutoff_stage": "advance",
+      "selected_stage": "third",
+      "mode": "PROVIDER_ASOF",
+      "decision": {
+        "id": "2024-Q1:advance:third:PROVIDER_ASOF",
+        "decision_at": "2024-04-26T12:00:00-04:00",
+        "evidence_ids": [
+          "2024-Q1-third"
+        ],
+        "mode": "PROVIDER_ASOF"
+      },
+      "evidence": {
+        "id": "2024-Q1-third",
+        "source": "US-BEA",
+        "entity": "2024-Q1",
+        "feature": "real_gdp_growth_annualized_pct",
+        "version": "24-27",
+        "value": 1.4,
+        "event_time": "2024-03-31T23:59:59-04:00",
+        "published_at": "2024-06-27T08:30:00-04:00",
+        "available_at": "2024-06-27T08:30:00-04:00",
+        "received_at": null,
+        "precision": "SECOND",
+        "availability_kind": "PROVIDER_PUBLISHED",
+        "usage": "OBSERVATION",
+        "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-third-estimate-corporate-profits-revised-estimate-and-gdp-industry",
+        "parents": []
+      },
+      "expected": "BLOCK",
+      "receipt": {
+        "schema_version": 1,
+        "policy": "temporal-evidence-v0.1",
+        "input_sha256": "16029bdd38c76a1bd434f00269360f6fcbb161ed708b2932885558ab2cbcf3b3",
+        "status": "BLOCK",
+        "counts": {
+          "BLOCK": 2,
+          "UNVERIFIED": 0
+        },
+        "decisions": 1,
+        "findings": [
+          {
+            "code": "LATE_AVAILABLE_AT",
+            "status": "BLOCK",
+            "record": "2024-Q1-third",
+            "decision": "2024-Q1:advance:third:PROVIDER_ASOF"
+          },
+          {
+            "code": "LATE_PUBLISHED_AT",
+            "status": "BLOCK",
+            "record": "2024-Q1-third",
+            "decision": "2024-Q1:advance:third:PROVIDER_ASOF"
+          }
+        ],
+        "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
+        "receipt_sha256": "196be5e6501d8357ae92a4965231ecfc2773328ffe7a55b1112cdb712fad152e"
+      }
+    },
+    {
+      "id": "2024-Q1:second:advance:PROVIDER_ASOF",
+      "quarter": "2024-Q1",
+      "cutoff_stage": "second",
+      "selected_stage": "advance",
+      "mode": "PROVIDER_ASOF",
+      "decision": {
+        "id": "2024-Q1:second:advance:PROVIDER_ASOF",
+        "decision_at": "2024-05-31T12:00:00-04:00",
+        "evidence_ids": [
+          "2024-Q1-advance"
+        ],
+        "mode": "PROVIDER_ASOF"
+      },
+      "evidence": {
+        "id": "2024-Q1-advance",
+        "source": "US-BEA",
+        "entity": "2024-Q1",
+        "feature": "real_gdp_growth_annualized_pct",
+        "version": "24-16",
+        "value": 1.6,
+        "event_time": "2024-03-31T23:59:59-04:00",
+        "published_at": "2024-04-25T08:30:00-04:00",
+        "available_at": "2024-04-25T08:30:00-04:00",
+        "received_at": null,
+        "precision": "SECOND",
+        "availability_kind": "PROVIDER_PUBLISHED",
+        "usage": "OBSERVATION",
+        "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-first-quarter-2024-advance-estimate",
+        "parents": []
+      },
+      "expected": "PASS",
+      "receipt": {
+        "schema_version": 1,
+        "policy": "temporal-evidence-v0.1",
+        "input_sha256": "19086297480e83217ce648c216c0b00e06118c13f8118b7f0af7650d315c04e6",
+        "status": "PASS",
+        "counts": {
+          "BLOCK": 0,
+          "UNVERIFIED": 0
+        },
+        "decisions": 1,
+        "findings": [],
+        "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
+        "receipt_sha256": "9bccefc2524a7e8ca148c737fc3d62638fe8d9b02fff69cb64d4b95f3436d97f"
+      }
+    },
+    {
+      "id": "2024-Q1:second:second:PROVIDER_ASOF",
+      "quarter": "2024-Q1",
+      "cutoff_stage": "second",
+      "selected_stage": "second",
+      "mode": "PROVIDER_ASOF",
+      "decision": {
+        "id": "2024-Q1:second:second:PROVIDER_ASOF",
+        "decision_at": "2024-05-31T12:00:00-04:00",
+        "evidence_ids": [
+          "2024-Q1-second"
+        ],
+        "mode": "PROVIDER_ASOF"
+      },
+      "evidence": {
+        "id": "2024-Q1-second",
+        "source": "US-BEA",
+        "entity": "2024-Q1",
+        "feature": "real_gdp_growth_annualized_pct",
+        "version": "24-19",
+        "value": 1.3,
+        "event_time": "2024-03-31T23:59:59-04:00",
+        "published_at": "2024-05-30T08:30:00-04:00",
+        "available_at": "2024-05-30T08:30:00-04:00",
+        "received_at": null,
+        "precision": "SECOND",
+        "availability_kind": "PROVIDER_PUBLISHED",
+        "usage": "OBSERVATION",
+        "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-first-quarter-2024-second-estimate-and-corporate-profits",
+        "parents": []
+      },
+      "expected": "PASS",
+      "receipt": {
+        "schema_version": 1,
+        "policy": "temporal-evidence-v0.1",
+        "input_sha256": "c95e0d3d9f134f381a571055ac850bf90a8cf2e5ca0dbb9c06b2125a05e21bce",
+        "status": "PASS",
+        "counts": {
+          "BLOCK": 0,
+          "UNVERIFIED": 0
+        },
+        "decisions": 1,
+        "findings": [],
+        "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
+        "receipt_sha256": "da572c7d786fee4e53072d1baf2991215418f62b4cc8ccbc9443e1c88ae53754"
+      }
+    },
+    {
+      "id": "2024-Q1:second:second:OBSERVED_REPLAY",
+      "quarter": "2024-Q1",
+      "cutoff_stage": "second",
+      "selected_stage": "second",
+      "mode": "OBSERVED_REPLAY",
+      "decision": {
+        "id": "2024-Q1:second:second:OBSERVED_REPLAY",
+        "decision_at": "2024-05-31T12:00:00-04:00",
+        "evidence_ids": [
+          "2024-Q1-second"
+        ],
+        "mode": "OBSERVED_REPLAY"
+      },
+      "evidence": {
+        "id": "2024-Q1-second",
+        "source": "US-BEA",
+        "entity": "2024-Q1",
+        "feature": "real_gdp_growth_annualized_pct",
+        "version": "24-19",
+        "value": 1.3,
+        "event_time": "2024-03-31T23:59:59-04:00",
+        "published_at": "2024-05-30T08:30:00-04:00",
+        "available_at": "2024-05-30T08:30:00-04:00",
+        "received_at": null,
+        "precision": "SECOND",
+        "availability_kind": "PROVIDER_PUBLISHED",
+        "usage": "OBSERVATION",
+        "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-first-quarter-2024-second-estimate-and-corporate-profits",
+        "parents": []
+      },
+      "expected": "UNVERIFIED",
+      "receipt": {
+        "schema_version": 1,
+        "policy": "temporal-evidence-v0.1",
+        "input_sha256": "298bcf17d018e97f6a0f5fb2d530607c63bb8f9a7cac4f0f1076c59aeeee2e87",
+        "status": "UNVERIFIED",
+        "counts": {
+          "BLOCK": 0,
+          "UNVERIFIED": 1
+        },
+        "decisions": 1,
+        "findings": [
+          {
+            "code": "NO_LOCAL_RECEIPT",
+            "status": "UNVERIFIED",
+            "record": "2024-Q1-second",
+            "decision": "2024-Q1:second:second:OBSERVED_REPLAY"
+          }
+        ],
+        "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
+        "receipt_sha256": "db8c9ccb473ff4ec74fe2c4a3e6e3e8e47c13b40689909c73dd4dbf990b1b96e"
+      }
+    },
+    {
+      "id": "2024-Q1:second:third:PROVIDER_ASOF",
+      "quarter": "2024-Q1",
+      "cutoff_stage": "second",
+      "selected_stage": "third",
+      "mode": "PROVIDER_ASOF",
+      "decision": {
+        "id": "2024-Q1:second:third:PROVIDER_ASOF",
+        "decision_at": "2024-05-31T12:00:00-04:00",
+        "evidence_ids": [
+          "2024-Q1-third"
+        ],
+        "mode": "PROVIDER_ASOF"
+      },
+      "evidence": {
+        "id": "2024-Q1-third",
+        "source": "US-BEA",
+        "entity": "2024-Q1",
+        "feature": "real_gdp_growth_annualized_pct",
+        "version": "24-27",
+        "value": 1.4,
+        "event_time": "2024-03-31T23:59:59-04:00",
+        "published_at": "2024-06-27T08:30:00-04:00",
+        "available_at": "2024-06-27T08:30:00-04:00",
+        "received_at": null,
+        "precision": "SECOND",
+        "availability_kind": "PROVIDER_PUBLISHED",
+        "usage": "OBSERVATION",
+        "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-third-estimate-corporate-profits-revised-estimate-and-gdp-industry",
+        "parents": []
+      },
+      "expected": "BLOCK",
+      "receipt": {
+        "schema_version": 1,
+        "policy": "temporal-evidence-v0.1",
+        "input_sha256": "7318ead7567b53cdcc6cb67f555da15c4cafcfcfef62b049d7e209daf0a400c4",
+        "status": "BLOCK",
+        "counts": {
+          "BLOCK": 2,
+          "UNVERIFIED": 0
+        },
+        "decisions": 1,
+        "findings": [
+          {
+            "code": "LATE_AVAILABLE_AT",
+            "status": "BLOCK",
+            "record": "2024-Q1-third",
+            "decision": "2024-Q1:second:third:PROVIDER_ASOF"
+          },
+          {
+            "code": "LATE_PUBLISHED_AT",
+            "status": "BLOCK",
+            "record": "2024-Q1-third",
+            "decision": "2024-Q1:second:third:PROVIDER_ASOF"
+          }
+        ],
+        "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
+        "receipt_sha256": "21db5be6afa1ffe78820ee51b788be6bf76b9508cc4f7072b081a61272b05d32"
+      }
+    },
+    {
+      "id": "2024-Q1:third:advance:PROVIDER_ASOF",
+      "quarter": "2024-Q1",
+      "cutoff_stage": "third",
+      "selected_stage": "advance",
+      "mode": "PROVIDER_ASOF",
+      "decision": {
+        "id": "2024-Q1:third:advance:PROVIDER_ASOF",
+        "decision_at": "2024-06-28T12:00:00-04:00",
+        "evidence_ids": [
+          "2024-Q1-advance"
+        ],
+        "mode": "PROVIDER_ASOF"
+      },
+      "evidence": {
+        "id": "2024-Q1-advance",
+        "source": "US-BEA",
+        "entity": "2024-Q1",
+        "feature": "real_gdp_growth_annualized_pct",
+        "version": "24-16",
+        "value": 1.6,
+        "event_time": "2024-03-31T23:59:59-04:00",
+        "published_at": "2024-04-25T08:30:00-04:00",
+        "available_at": "2024-04-25T08:30:00-04:00",
+        "received_at": null,
+        "precision": "SECOND",
+        "availability_kind": "PROVIDER_PUBLISHED",
+        "usage": "OBSERVATION",
+        "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-first-quarter-2024-advance-estimate",
+        "parents": []
+      },
+      "expected": "PASS",
+      "receipt": {
+        "schema_version": 1,
+        "policy": "temporal-evidence-v0.1",
+        "input_sha256": "b3c0f6749d02c9b4a6f44a8247ae692c80aab61ca1c898c6e0ba00e47b1a6130",
+        "status": "PASS",
+        "counts": {
+          "BLOCK": 0,
+          "UNVERIFIED": 0
+        },
+        "decisions": 1,
+        "findings": [],
+        "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
+        "receipt_sha256": "7e790045f2456d3b7dc15ca3c0e05011c253ed5ceaf2f5f06c1a579082cb6775"
+      }
+    },
+    {
+      "id": "2024-Q1:third:second:PROVIDER_ASOF",
+      "quarter": "2024-Q1",
+      "cutoff_stage": "third",
+      "selected_stage": "second",
+      "mode": "PROVIDER_ASOF",
+      "decision": {
+        "id": "2024-Q1:third:second:PROVIDER_ASOF",
+        "decision_at": "2024-06-28T12:00:00-04:00",
+        "evidence_ids": [
+          "2024-Q1-second"
+        ],
+        "mode": "PROVIDER_ASOF"
+      },
+      "evidence": {
+        "id": "2024-Q1-second",
+        "source": "US-BEA",
+        "entity": "2024-Q1",
+        "feature": "real_gdp_growth_annualized_pct",
+        "version": "24-19",
+        "value": 1.3,
+        "event_time": "2024-03-31T23:59:59-04:00",
+        "published_at": "2024-05-30T08:30:00-04:00",
+        "available_at": "2024-05-30T08:30:00-04:00",
+        "received_at": null,
+        "precision": "SECOND",
+        "availability_kind": "PROVIDER_PUBLISHED",
+        "usage": "OBSERVATION",
+        "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-first-quarter-2024-second-estimate-and-corporate-profits",
+        "parents": []
+      },
+      "expected": "PASS",
+      "receipt": {
+        "schema_version": 1,
+        "policy": "temporal-evidence-v0.1",
+        "input_sha256": "d5583a5518b9be4940a0a3d5016d95faf5b3debc9a94472c1217b0d1b151ef7a",
+        "status": "PASS",
+        "counts": {
+          "BLOCK": 0,
+          "UNVERIFIED": 0
+        },
+        "decisions": 1,
+        "findings": [],
+        "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
+        "receipt_sha256": "4cdc4ae7ede91258c7e40c2f0a46953217738555442c958ebc4707ec46a99e7e"
+      }
+    },
+    {
+      "id": "2024-Q1:third:third:PROVIDER_ASOF",
+      "quarter": "2024-Q1",
+      "cutoff_stage": "third",
+      "selected_stage": "third",
+      "mode": "PROVIDER_ASOF",
+      "decision": {
+        "id": "2024-Q1:third:third:PROVIDER_ASOF",
+        "decision_at": "2024-06-28T12:00:00-04:00",
+        "evidence_ids": [
+          "2024-Q1-third"
+        ],
+        "mode": "PROVIDER_ASOF"
+      },
+      "evidence": {
+        "id": "2024-Q1-third",
+        "source": "US-BEA",
+        "entity": "2024-Q1",
+        "feature": "real_gdp_growth_annualized_pct",
+        "version": "24-27",
+        "value": 1.4,
+        "event_time": "2024-03-31T23:59:59-04:00",
+        "published_at": "2024-06-27T08:30:00-04:00",
+        "available_at": "2024-06-27T08:30:00-04:00",
+        "received_at": null,
+        "precision": "SECOND",
+        "availability_kind": "PROVIDER_PUBLISHED",
+        "usage": "OBSERVATION",
+        "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-third-estimate-corporate-profits-revised-estimate-and-gdp-industry",
+        "parents": []
+      },
+      "expected": "PASS",
+      "receipt": {
+        "schema_version": 1,
+        "policy": "temporal-evidence-v0.1",
+        "input_sha256": "45fe58219d24a8f3238e8e7f0038451ed9400867d81b3026bb94c58243a8a2b5",
+        "status": "PASS",
+        "counts": {
+          "BLOCK": 0,
+          "UNVERIFIED": 0
+        },
+        "decisions": 1,
+        "findings": [],
+        "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
+        "receipt_sha256": "fc33f13e3a6a4987231e05ecbe0758c5781bf1029907b8769ac5df908592e119"
+      }
+    },
+    {
+      "id": "2024-Q1:third:third:OBSERVED_REPLAY",
+      "quarter": "2024-Q1",
+      "cutoff_stage": "third",
+      "selected_stage": "third",
+      "mode": "OBSERVED_REPLAY",
+      "decision": {
+        "id": "2024-Q1:third:third:OBSERVED_REPLAY",
+        "decision_at": "2024-06-28T12:00:00-04:00",
+        "evidence_ids": [
+          "2024-Q1-third"
+        ],
+        "mode": "OBSERVED_REPLAY"
+      },
+      "evidence": {
+        "id": "2024-Q1-third",
+        "source": "US-BEA",
+        "entity": "2024-Q1",
+        "feature": "real_gdp_growth_annualized_pct",
+        "version": "24-27",
+        "value": 1.4,
+        "event_time": "2024-03-31T23:59:59-04:00",
+        "published_at": "2024-06-27T08:30:00-04:00",
+        "available_at": "2024-06-27T08:30:00-04:00",
+        "received_at": null,
+        "precision": "SECOND",
+        "availability_kind": "PROVIDER_PUBLISHED",
+        "usage": "OBSERVATION",
+        "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-third-estimate-corporate-profits-revised-estimate-and-gdp-industry",
+        "parents": []
+      },
+      "expected": "UNVERIFIED",
+      "receipt": {
+        "schema_version": 1,
+        "policy": "temporal-evidence-v0.1",
+        "input_sha256": "319c54e772476b362e9702d5ac7b1b370ce3e13ce2c547a8176f37752650f7d3",
+        "status": "UNVERIFIED",
+        "counts": {
+          "BLOCK": 0,
+          "UNVERIFIED": 1
+        },
+        "decisions": 1,
+        "findings": [
+          {
+            "code": "NO_LOCAL_RECEIPT",
+            "status": "UNVERIFIED",
+            "record": "2024-Q1-third",
+            "decision": "2024-Q1:third:third:OBSERVED_REPLAY"
+          }
+        ],
+        "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
+        "receipt_sha256": "2947550d81bff5eaf69d24eb9ac7cc45ae0ffe5d963df482084aae9ca2635d9c"
+      }
+    },
+    {
+      "id": "2024-Q2:advance:advance:PROVIDER_ASOF",
+      "quarter": "2024-Q2",
+      "cutoff_stage": "advance",
+      "selected_stage": "advance",
+      "mode": "PROVIDER_ASOF",
+      "decision": {
+        "id": "2024-Q2:advance:advance:PROVIDER_ASOF",
+        "decision_at": "2024-07-26T12:00:00-04:00",
+        "evidence_ids": [
+          "2024-Q2-advance"
+        ],
+        "mode": "PROVIDER_ASOF"
+      },
+      "evidence": {
+        "id": "2024-Q2-advance",
+        "source": "US-BEA",
+        "entity": "2024-Q2",
+        "feature": "real_gdp_growth_annualized_pct",
+        "version": "24-33",
+        "value": 2.8,
+        "event_time": "2024-06-30T23:59:59-04:00",
+        "published_at": "2024-07-25T08:30:00-04:00",
+        "available_at": "2024-07-25T08:30:00-04:00",
+        "received_at": null,
+        "precision": "SECOND",
+        "availability_kind": "PROVIDER_PUBLISHED",
+        "usage": "OBSERVATION",
+        "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-second-quarter-2024-advance-estimate",
+        "parents": []
+      },
+      "expected": "PASS",
+      "receipt": {
+        "schema_version": 1,
+        "policy": "temporal-evidence-v0.1",
+        "input_sha256": "6be4327cfb1e0f968b96b25192679bb4977716043f6a20d08a22c5db1435e563",
+        "status": "PASS",
+        "counts": {
+          "BLOCK": 0,
+          "UNVERIFIED": 0
+        },
+        "decisions": 1,
+        "findings": [],
+        "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
+        "receipt_sha256": "d1e55f2c3e93998f3de67312b5bd5b485b213925e5f781051f32567d3ef450f8"
+      }
+    },
+    {
+      "id": "2024-Q2:advance:advance:OBSERVED_REPLAY",
+      "quarter": "2024-Q2",
+      "cutoff_stage": "advance",
+      "selected_stage": "advance",
+      "mode": "OBSERVED_REPLAY",
+      "decision": {
+        "id": "2024-Q2:advance:advance:OBSERVED_REPLAY",
+        "decision_at": "2024-07-26T12:00:00-04:00",
+        "evidence_ids": [
+          "2024-Q2-advance"
+        ],
+        "mode": "OBSERVED_REPLAY"
+      },
+      "evidence": {
+        "id": "2024-Q2-advance",
+        "source": "US-BEA",
+        "entity": "2024-Q2",
+        "feature": "real_gdp_growth_annualized_pct",
+        "version": "24-33",
+        "value": 2.8,
+        "event_time": "2024-06-30T23:59:59-04:00",
+        "published_at": "2024-07-25T08:30:00-04:00",
+        "available_at": "2024-07-25T08:30:00-04:00",
+        "received_at": null,
+        "precision": "SECOND",
+        "availability_kind": "PROVIDER_PUBLISHED",
+        "usage": "OBSERVATION",
+        "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-second-quarter-2024-advance-estimate",
+        "parents": []
+      },
+      "expected": "UNVERIFIED",
+      "receipt": {
+        "schema_version": 1,
+        "policy": "temporal-evidence-v0.1",
+        "input_sha256": "052f855efc93731773eb8e485a3c73d088ec357c415b135838f4466143ed17f9",
+        "status": "UNVERIFIED",
+        "counts": {
+          "BLOCK": 0,
+          "UNVERIFIED": 1
+        },
+        "decisions": 1,
+        "findings": [
+          {
+            "code": "NO_LOCAL_RECEIPT",
+            "status": "UNVERIFIED",
+            "record": "2024-Q2-advance",
+            "decision": "2024-Q2:advance:advance:OBSERVED_REPLAY"
+          }
+        ],
+        "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
+        "receipt_sha256": "c56d4b1872736a1ea8cd24bde9c98d202359cf6616570c1c80fa61bbb4a31cd4"
+      }
+    },
+    {
+      "id": "2024-Q2:advance:second:PROVIDER_ASOF",
+      "quarter": "2024-Q2",
+      "cutoff_stage": "advance",
+      "selected_stage": "second",
+      "mode": "PROVIDER_ASOF",
+      "decision": {
+        "id": "2024-Q2:advance:second:PROVIDER_ASOF",
+        "decision_at": "2024-07-26T12:00:00-04:00",
+        "evidence_ids": [
+          "2024-Q2-second"
+        ],
+        "mode": "PROVIDER_ASOF"
+      },
+      "evidence": {
+        "id": "2024-Q2-second",
+        "source": "US-BEA",
+        "entity": "2024-Q2",
+        "feature": "real_gdp_growth_annualized_pct",
+        "version": "24-38",
+        "value": 3.0,
+        "event_time": "2024-06-30T23:59:59-04:00",
+        "published_at": "2024-08-29T08:30:00-04:00",
+        "available_at": "2024-08-29T08:30:00-04:00",
+        "received_at": null,
+        "precision": "SECOND",
+        "availability_kind": "PROVIDER_PUBLISHED",
+        "usage": "OBSERVATION",
+        "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-second-estimate-corporate-profits-preliminary-estimate-second",
+        "parents": []
+      },
+      "expected": "BLOCK",
+      "receipt": {
+        "schema_version": 1,
+        "policy": "temporal-evidence-v0.1",
+        "input_sha256": "a8a4ab40189073503fb9f1eca53b92f0eb668bc396db82bf810b2e2349a72c18",
+        "status": "BLOCK",
+        "counts": {
+          "BLOCK": 2,
+          "UNVERIFIED": 0
+        },
+        "decisions": 1,
+        "findings": [
+          {
+            "code": "LATE_AVAILABLE_AT",
+            "status": "BLOCK",
+            "record": "2024-Q2-second",
+            "decision": "2024-Q2:advance:second:PROVIDER_ASOF"
+          },
+          {
+            "code": "LATE_PUBLISHED_AT",
+            "status": "BLOCK",
+            "record": "2024-Q2-second",
+            "decision": "2024-Q2:advance:second:PROVIDER_ASOF"
+          }
+        ],
+        "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
+        "receipt_sha256": "a190cd7aa7fa69fba3c0466eefc86a2fd1e90cee0d3211e5c73395dd077f842e"
+      }
+    },
+    {
+      "id": "2024-Q2:advance:third:PROVIDER_ASOF",
+      "quarter": "2024-Q2",
+      "cutoff_stage": "advance",
+      "selected_stage": "third",
+      "mode": "PROVIDER_ASOF",
+      "decision": {
+        "id": "2024-Q2:advance:third:PROVIDER_ASOF",
+        "decision_at": "2024-07-26T12:00:00-04:00",
+        "evidence_ids": [
+          "2024-Q2-third"
+        ],
+        "mode": "PROVIDER_ASOF"
+      },
+      "evidence": {
+        "id": "2024-Q2-third",
+        "source": "US-BEA",
+        "entity": "2024-Q2",
+        "feature": "real_gdp_growth_annualized_pct",
+        "version": "24-43",
+        "value": 3.0,
+        "event_time": "2024-06-30T23:59:59-04:00",
+        "published_at": "2024-09-26T08:30:00-04:00",
+        "available_at": "2024-09-26T08:30:00-04:00",
+        "received_at": null,
+        "precision": "SECOND",
+        "availability_kind": "PROVIDER_PUBLISHED",
+        "usage": "OBSERVATION",
+        "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-third-estimate-corporate-profits-revised-estimate-and-gdp-0",
+        "parents": []
+      },
+      "expected": "BLOCK",
+      "receipt": {
+        "schema_version": 1,
+        "policy": "temporal-evidence-v0.1",
+        "input_sha256": "d61470759af0e3dc7cab9da99be686f0cd3e668dc8676c50ff20cad7187d702d",
+        "status": "BLOCK",
+        "counts": {
+          "BLOCK": 2,
+          "UNVERIFIED": 0
+        },
+        "decisions": 1,
+        "findings": [
+          {
+            "code": "LATE_AVAILABLE_AT",
+            "status": "BLOCK",
+            "record": "2024-Q2-third",
+            "decision": "2024-Q2:advance:third:PROVIDER_ASOF"
+          },
+          {
+            "code": "LATE_PUBLISHED_AT",
+            "status": "BLOCK",
+            "record": "2024-Q2-third",
+            "decision": "2024-Q2:advance:third:PROVIDER_ASOF"
+          }
+        ],
+        "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
+        "receipt_sha256": "c557a99998dcc93e7e8ae281de24b1ac75ba3b34b812f5b767e8fcaa758ab4b4"
+      }
+    },
+    {
+      "id": "2024-Q2:second:advance:PROVIDER_ASOF",
+      "quarter": "2024-Q2",
+      "cutoff_stage": "second",
+      "selected_stage": "advance",
+      "mode": "PROVIDER_ASOF",
+      "decision": {
+        "id": "2024-Q2:second:advance:PROVIDER_ASOF",
+        "decision_at": "2024-08-30T12:00:00-04:00",
+        "evidence_ids": [
+          "2024-Q2-advance"
+        ],
+        "mode": "PROVIDER_ASOF"
+      },
+      "evidence": {
+        "id": "2024-Q2-advance",
+        "source": "US-BEA",
+        "entity": "2024-Q2",
+        "feature": "real_gdp_growth_annualized_pct",
+        "version": "24-33",
+        "value": 2.8,
+        "event_time": "2024-06-30T23:59:59-04:00",
+        "published_at": "2024-07-25T08:30:00-04:00",
+        "available_at": "2024-07-25T08:30:00-04:00",
+        "received_at": null,
+        "precision": "SECOND",
+        "availability_kind": "PROVIDER_PUBLISHED",
+        "usage": "OBSERVATION",
+        "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-second-quarter-2024-advance-estimate",
+        "parents": []
+      },
+      "expected": "PASS",
+      "receipt": {
+        "schema_version": 1,
+        "policy": "temporal-evidence-v0.1",
+        "input_sha256": "3e8d7c18accccd1aaf8b9f3d77076fbe723e330a0690a318e3a2ddc3527b4996",
+        "status": "PASS",
+        "counts": {
+          "BLOCK": 0,
+          "UNVERIFIED": 0
+        },
+        "decisions": 1,
+        "findings": [],
+        "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
+        "receipt_sha256": "2993f5ada79272942b3328021e0b3cfe9d7b92a25263e9d239f68562dc320890"
+      }
+    },
+    {
+      "id": "2024-Q2:second:second:PROVIDER_ASOF",
+      "quarter": "2024-Q2",
+      "cutoff_stage": "second",
+      "selected_stage": "second",
+      "mode": "PROVIDER_ASOF",
+      "decision": {
+        "id": "2024-Q2:second:second:PROVIDER_ASOF",
+        "decision_at": "2024-08-30T12:00:00-04:00",
+        "evidence_ids": [
+          "2024-Q2-second"
+        ],
+        "mode": "PROVIDER_ASOF"
+      },
+      "evidence": {
+        "id": "2024-Q2-second",
+        "source": "US-BEA",
+        "entity": "2024-Q2",
+        "feature": "real_gdp_growth_annualized_pct",
+        "version": "24-38",
+        "value": 3.0,
+        "event_time": "2024-06-30T23:59:59-04:00",
+        "published_at": "2024-08-29T08:30:00-04:00",
+        "available_at": "2024-08-29T08:30:00-04:00",
+        "received_at": null,
+        "precision": "SECOND",
+        "availability_kind": "PROVIDER_PUBLISHED",
+        "usage": "OBSERVATION",
+        "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-second-estimate-corporate-profits-preliminary-estimate-second",
+        "parents": []
+      },
+      "expected": "PASS",
+      "receipt": {
+        "schema_version": 1,
+        "policy": "temporal-evidence-v0.1",
+        "input_sha256": "ecfdbf0473faa97d613ad0afbc008e788851025d35d9b1d9a9430d2ee25c17b3",
+        "status": "PASS",
+        "counts": {
+          "BLOCK": 0,
+          "UNVERIFIED": 0
+        },
+        "decisions": 1,
+        "findings": [],
+        "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
+        "receipt_sha256": "40bc25be14fbb3544eef66548881851c3272ab531ce66ca3e9b9c77ea44bf2fc"
+      }
+    },
+    {
+      "id": "2024-Q2:second:second:OBSERVED_REPLAY",
+      "quarter": "2024-Q2",
+      "cutoff_stage": "second",
+      "selected_stage": "second",
+      "mode": "OBSERVED_REPLAY",
+      "decision": {
+        "id": "2024-Q2:second:second:OBSERVED_REPLAY",
+        "decision_at": "2024-08-30T12:00:00-04:00",
+        "evidence_ids": [
+          "2024-Q2-second"
+        ],
+        "mode": "OBSERVED_REPLAY"
+      },
+      "evidence": {
+        "id": "2024-Q2-second",
+        "source": "US-BEA",
+        "entity": "2024-Q2",
+        "feature": "real_gdp_growth_annualized_pct",
+        "version": "24-38",
+        "value": 3.0,
+        "event_time": "2024-06-30T23:59:59-04:00",
+        "published_at": "2024-08-29T08:30:00-04:00",
+        "available_at": "2024-08-29T08:30:00-04:00",
+        "received_at": null,
+        "precision": "SECOND",
+        "availability_kind": "PROVIDER_PUBLISHED",
+        "usage": "OBSERVATION",
+        "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-second-estimate-corporate-profits-preliminary-estimate-second",
+        "parents": []
+      },
+      "expected": "UNVERIFIED",
+      "receipt": {
+        "schema_version": 1,
+        "policy": "temporal-evidence-v0.1",
+        "input_sha256": "7e022ae50b34beadc8b97d279a4dd74ad5442416a2ec800797946f78a8896800",
+        "status": "UNVERIFIED",
+        "counts": {
+          "BLOCK": 0,
+          "UNVERIFIED": 1
+        },
+        "decisions": 1,
+        "findings": [
+          {
+            "code": "NO_LOCAL_RECEIPT",
+            "status": "UNVERIFIED",
+            "record": "2024-Q2-second",
+            "decision": "2024-Q2:second:second:OBSERVED_REPLAY"
+          }
+        ],
+        "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
+        "receipt_sha256": "44bb3cc7311e983006b4ca8c7489c64827f8b68fc12b453cc6f346f4686f7267"
+      }
+    },
+    {
+      "id": "2024-Q2:second:third:PROVIDER_ASOF",
+      "quarter": "2024-Q2",
+      "cutoff_stage": "second",
+      "selected_stage": "third",
+      "mode": "PROVIDER_ASOF",
+      "decision": {
+        "id": "2024-Q2:second:third:PROVIDER_ASOF",
+        "decision_at": "2024-08-30T12:00:00-04:00",
+        "evidence_ids": [
+          "2024-Q2-third"
+        ],
+        "mode": "PROVIDER_ASOF"
+      },
+      "evidence": {
+        "id": "2024-Q2-third",
+        "source": "US-BEA",
+        "entity": "2024-Q2",
+        "feature": "real_gdp_growth_annualized_pct",
+        "version": "24-43",
+        "value": 3.0,
+        "event_time": "2024-06-30T23:59:59-04:00",
+        "published_at": "2024-09-26T08:30:00-04:00",
+        "available_at": "2024-09-26T08:30:00-04:00",
+        "received_at": null,
+        "precision": "SECOND",
+        "availability_kind": "PROVIDER_PUBLISHED",
+        "usage": "OBSERVATION",
+        "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-third-estimate-corporate-profits-revised-estimate-and-gdp-0",
+        "parents": []
+      },
+      "expected": "BLOCK",
+      "receipt": {
+        "schema_version": 1,
+        "policy": "temporal-evidence-v0.1",
+        "input_sha256": "e9e7ed5204ebe39880ee6f2c8ac77a0947e9e686adea7755018cc63999e99948",
+        "status": "BLOCK",
+        "counts": {
+          "BLOCK": 2,
+          "UNVERIFIED": 0
+        },
+        "decisions": 1,
+        "findings": [
+          {
+            "code": "LATE_AVAILABLE_AT",
+            "status": "BLOCK",
+            "record": "2024-Q2-third",
+            "decision": "2024-Q2:second:third:PROVIDER_ASOF"
+          },
+          {
+            "code": "LATE_PUBLISHED_AT",
+            "status": "BLOCK",
+            "record": "2024-Q2-third",
+            "decision": "2024-Q2:second:third:PROVIDER_ASOF"
+          }
+        ],
+        "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
+        "receipt_sha256": "07dbabbad5581a90aab684887d5b2638e305785fcea56d9b464b20d0aa8849be"
+      }
+    },
+    {
+      "id": "2024-Q2:third:advance:PROVIDER_ASOF",
+      "quarter": "2024-Q2",
+      "cutoff_stage": "third",
+      "selected_stage": "advance",
+      "mode": "PROVIDER_ASOF",
+      "decision": {
+        "id": "2024-Q2:third:advance:PROVIDER_ASOF",
+        "decision_at": "2024-09-27T12:00:00-04:00",
+        "evidence_ids": [
+          "2024-Q2-advance"
+        ],
+        "mode": "PROVIDER_ASOF"
+      },
+      "evidence": {
+        "id": "2024-Q2-advance",
+        "source": "US-BEA",
+        "entity": "2024-Q2",
+        "feature": "real_gdp_growth_annualized_pct",
+        "version": "24-33",
+        "value": 2.8,
+        "event_time": "2024-06-30T23:59:59-04:00",
+        "published_at": "2024-07-25T08:30:00-04:00",
+        "available_at": "2024-07-25T08:30:00-04:00",
+        "received_at": null,
+        "precision": "SECOND",
+        "availability_kind": "PROVIDER_PUBLISHED",
+        "usage": "OBSERVATION",
+        "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-second-quarter-2024-advance-estimate",
+        "parents": []
+      },
+      "expected": "PASS",
+      "receipt": {
+        "schema_version": 1,
+        "policy": "temporal-evidence-v0.1",
+        "input_sha256": "e61fb3d1af212ae7d7834fe436e0e3270d7d3391cc134b23558988ce6876b1b9",
+        "status": "PASS",
+        "counts": {
+          "BLOCK": 0,
+          "UNVERIFIED": 0
+        },
+        "decisions": 1,
+        "findings": [],
+        "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
+        "receipt_sha256": "fb832221dade2ed95da52a79e018045b66d487039f3186fd742aec583205db7c"
+      }
+    },
+    {
+      "id": "2024-Q2:third:second:PROVIDER_ASOF",
+      "quarter": "2024-Q2",
+      "cutoff_stage": "third",
+      "selected_stage": "second",
+      "mode": "PROVIDER_ASOF",
+      "decision": {
+        "id": "2024-Q2:third:second:PROVIDER_ASOF",
+        "decision_at": "2024-09-27T12:00:00-04:00",
+        "evidence_ids": [
+          "2024-Q2-second"
+        ],
+        "mode": "PROVIDER_ASOF"
+      },
+      "evidence": {
+        "id": "2024-Q2-second",
+        "source": "US-BEA",
+        "entity": "2024-Q2",
+        "feature": "real_gdp_growth_annualized_pct",
+        "version": "24-38",
+        "value": 3.0,
+        "event_time": "2024-06-30T23:59:59-04:00",
+        "published_at": "2024-08-29T08:30:00-04:00",
+        "available_at": "2024-08-29T08:30:00-04:00",
+        "received_at": null,
+        "precision": "SECOND",
+        "availability_kind": "PROVIDER_PUBLISHED",
+        "usage": "OBSERVATION",
+        "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-second-estimate-corporate-profits-preliminary-estimate-second",
+        "parents": []
+      },
+      "expected": "PASS",
+      "receipt": {
+        "schema_version": 1,
+        "policy": "temporal-evidence-v0.1",
+        "input_sha256": "004c61bf5ad3f83518bdaeb9cf40b066a07154989e53a7a098c5d8e544904a91",
+        "status": "PASS",
+        "counts": {
+          "BLOCK": 0,
+          "UNVERIFIED": 0
+        },
+        "decisions": 1,
+        "findings": [],
+        "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
+        "receipt_sha256": "d519c26233c22dcc4c858c0a01571237a6e5021f9c700ed9c9932711f4ce6cb7"
+      }
+    },
+    {
+      "id": "2024-Q2:third:third:PROVIDER_ASOF",
+      "quarter": "2024-Q2",
+      "cutoff_stage": "third",
+      "selected_stage": "third",
+      "mode": "PROVIDER_ASOF",
+      "decision": {
+        "id": "2024-Q2:third:third:PROVIDER_ASOF",
+        "decision_at": "2024-09-27T12:00:00-04:00",
+        "evidence_ids": [
+          "2024-Q2-third"
+        ],
+        "mode": "PROVIDER_ASOF"
+      },
+      "evidence": {
+        "id": "2024-Q2-third",
+        "source": "US-BEA",
+        "entity": "2024-Q2",
+        "feature": "real_gdp_growth_annualized_pct",
+        "version": "24-43",
+        "value": 3.0,
+        "event_time": "2024-06-30T23:59:59-04:00",
+        "published_at": "2024-09-26T08:30:00-04:00",
+        "available_at": "2024-09-26T08:30:00-04:00",
+        "received_at": null,
+        "precision": "SECOND",
+        "availability_kind": "PROVIDER_PUBLISHED",
+        "usage": "OBSERVATION",
+        "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-third-estimate-corporate-profits-revised-estimate-and-gdp-0",
+        "parents": []
+      },
+      "expected": "PASS",
+      "receipt": {
+        "schema_version": 1,
+        "policy": "temporal-evidence-v0.1",
+        "input_sha256": "eb23158213bebb08dcbd5ce3bd038e9b1f921d526a1843ef1114ffe7e9bd89ba",
+        "status": "PASS",
+        "counts": {
+          "BLOCK": 0,
+          "UNVERIFIED": 0
+        },
+        "decisions": 1,
+        "findings": [],
+        "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
+        "receipt_sha256": "6c420602209209d15b110d84359206850dabc5e0b1329d00b4d3249848b8295b"
+      }
+    },
+    {
+      "id": "2024-Q2:third:third:OBSERVED_REPLAY",
+      "quarter": "2024-Q2",
+      "cutoff_stage": "third",
+      "selected_stage": "third",
+      "mode": "OBSERVED_REPLAY",
+      "decision": {
+        "id": "2024-Q2:third:third:OBSERVED_REPLAY",
+        "decision_at": "2024-09-27T12:00:00-04:00",
+        "evidence_ids": [
+          "2024-Q2-third"
+        ],
+        "mode": "OBSERVED_REPLAY"
+      },
+      "evidence": {
+        "id": "2024-Q2-third",
+        "source": "US-BEA",
+        "entity": "2024-Q2",
+        "feature": "real_gdp_growth_annualized_pct",
+        "version": "24-43",
+        "value": 3.0,
+        "event_time": "2024-06-30T23:59:59-04:00",
+        "published_at": "2024-09-26T08:30:00-04:00",
+        "available_at": "2024-09-26T08:30:00-04:00",
+        "received_at": null,
+        "precision": "SECOND",
+        "availability_kind": "PROVIDER_PUBLISHED",
+        "usage": "OBSERVATION",
+        "source_ref": "https://www.bea.gov/news/2024/gross-domestic-product-third-estimate-corporate-profits-revised-estimate-and-gdp-0",
+        "parents": []
+      },
+      "expected": "UNVERIFIED",
+      "receipt": {
+        "schema_version": 1,
+        "policy": "temporal-evidence-v0.1",
+        "input_sha256": "4df6849f6c86038591a9a35b0f3ffd16559cbec8b8d33c5bc88f9abcb6a40a63",
+        "status": "UNVERIFIED",
+        "counts": {
+          "BLOCK": 0,
+          "UNVERIFIED": 1
+        },
+        "decisions": 1,
+        "findings": [
+          {
+            "code": "NO_LOCAL_RECEIPT",
+            "status": "UNVERIFIED",
+            "record": "2024-Q2-third",
+            "decision": "2024-Q2:third:third:OBSERVED_REPLAY"
+          }
+        ],
+        "scope": "Declared temporal evidence only; no source authentication, predictive validation or action authorization.",
+        "receipt_sha256": "07d6818c9607c360d02bc38b35702e6b1a6a1b4bcd3ac9abeff9e54a931f5c8f"
+      }
+    }
+  ],
+  "summary": {
+    "cases": 24,
+    "matched": 24,
+    "counts": {
+      "PASS": 12,
+      "BLOCK": 6,
+      "UNVERIFIED": 6
+    }
+  }
+}
