@@ -1,5 +1,7 @@
 # Release candidate audit · 0.3.0 · 2026-11-27
 
+Historical record of the v0.3 candidate audit before owner approval. The owner later approved the project name, Apache-2.0 and public visibility; see LAUNCH_CHECKLIST.md for remaining actions.
+
 Scope: author-side review of the standalone MVP, not an independent security certification. Baseline: v0.2 main commit 64559e59c8df2eccf51b59acb61d19be1a182a30; all 29 local baseline files matched the retained source manifest. No other repository was edited.
 
 ## Findings and remediation
@@ -21,7 +23,7 @@ Policy changed to temporal-evidence-v0.3. All bundled receipts regenerated. Olde
 
 Umbrella working name: Open Decision Core. Use descriptive module labels Temporal Audit, Decision Policy and Research Lab; avoid previously identified collisions with ChronoGuard and DecisionGuard. Distribution `open-decision-core-preview` and import `odc` are provisional; PyPI lookup did not establish availability, no trademark clearance claimed. Do not publish on PyPI yet.
 
-Proposed Apache-2.0 text: [candidate](APACHE-2.0-CANDIDATE.txt), not yet a license grant. Owner must confirm ownership/right to license and approve moving text to root LICENSE before public release. No runtime third-party dependencies. Build/test tooling has its own licenses. The six BEA numerical facts and metadata are attributed; reuse terms at https://www.bea.gov/help/faq/147. Code was developed separately using architectural ideas; this review is not a full independent provenance or trademark audit.
+Proposed Apache-2.0 text: [Apache-2.0 text now at repository root](../LICENSE), not yet a license grant. Owner must confirm ownership/right to license and approve moving text to root LICENSE before public release. No runtime third-party dependencies. Build/test tooling has its own licenses. The six BEA numerical facts and metadata are attributed; reuse terms at https://www.bea.gov/help/faq/147. Code was developed separately using architectural ideas; this review is not a full independent provenance or trademark audit.
 
 ## Remaining gates
 

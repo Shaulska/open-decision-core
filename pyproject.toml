@@ -6,6 +6,11 @@ name = "open-decision-core-preview"
 version = "0.3.0"
 description = "Experimental time-aware decision-evidence audit"
 requires-python = ">=3.10"
+license = {file = "LICENSE"}
+readme = "README.md"
+[project.urls]
+Repository = "https://github.com/Shaulska/open-decision-core"
+Issues = "https://github.com/Shaulska/open-decision-core/issues"
 [project.scripts]
 odc = "odc.__main__:main"
 [tool.setuptools]
