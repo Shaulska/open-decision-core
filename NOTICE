@@ -1,0 +1,8 @@
+Open Decision Core
+
+Project code and original documentation: Apache License, Version 2.0.
+
+Data attribution: U.S. Bureau of Economic Analysis (BEA), six public
+GDP releases from 2024; source URLs and reuse details are listed in
+examples/bea/releases.json and docs/BEA_BENCHMARK.md. BEA data are
+subject to their own reuse terms; no BEA endorsement is implied.

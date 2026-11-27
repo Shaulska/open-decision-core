@@ -4,7 +4,7 @@
 
 A local-first toolkit for checking whether the evidence behind an AI or ML decision was available at its declared cutoff. Open Decision Core audits exact versions, lineage and historical split manifests, then produces deterministic, reproducible receipts.
 
-**Release candidate 0.3.0** · Python 3.10+ · No runtime dependencies · No API keys
+**MVP v0.3.0** · Python 3.10+ · No runtime dependencies · No API keys
 
 [Project website (local preview)](site/index.html) · [Interactive BEA demo](examples/bea/index.html) · [Evidence contract](docs/CONTRACT.md) · [Roadmap](docs/ROADMAP.md)
 
@@ -77,4 +77,4 @@ PASS is not proof of source truth, historical existence, predictive accuracy, se
 
 [Contributing](CONTRIBUTING.md) · [Security and limitations](SECURITY.md) · [Release audit](docs/RELEASE_AUDIT.md) · [Launch checklist](docs/LAUNCH_CHECKLIST.md)
 
-This is a private release candidate being prepared for open-source release. Apache-2.0 is proposed, not yet granted; owner approval and rights confirmation are pending. Project/distribution names are provisional. No external adoption or independent security certification is claimed.
+The project code and original documentation are licensed under [Apache-2.0](LICENSE). See [NOTICE](NOTICE) for data attribution. This is an experimental MVP, not a production security guarantee. External adoption and independent validation are not established. Package name remains provisional; not published on PyPI. For reproducible feedback, open a [GitHub issue](https://github.com/Shaulska/open-decision-core/issues/new).
